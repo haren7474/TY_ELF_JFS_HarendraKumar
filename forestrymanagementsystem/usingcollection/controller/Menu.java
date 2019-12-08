@@ -1,0 +1,143 @@
+package com.tyss.fms.controller;
+
+import java.util.Scanner;
+
+import com.tyss.fms.dto.ContractBean;
+import com.tyss.fms.dto.CustomerBean;
+import com.tyss.fms.dto.LandBean;
+
+public class Menu 
+{
+	static Scanner sc= new Scanner(System.in);
+	public static int dashBoardMenu() 
+	{
+		System.out.println("***********DashBoard Menu***********");
+		System.out.println("1. Manage Customer\n2. Manage Contract\n3. Manage Product\n4. Manage Land Data\n5. Exit");
+		System.out.println("***********************************");
+		System.out.println("Please enter your choice from DashBaord menu");
+		int dashBoardChoice = sc.nextInt();
+		sc.nextLine();
+		return dashBoardChoice;
+	}
+
+	public static int customerMenu() {
+		System.out.println("***********Customer Menu***********");
+		System.out.println("1. Add Customer\n2. Modify Custoomer \n3. Delete Customer"
+				+ "\n4. Display All Customers\n5. To be implementes\n6. Go to Dashboard\n7. Exit");
+		System.out.println("*********************************");
+		System.out.println("Please enter your choice from Customer Menu");
+		int customerChoice = sc.nextInt();
+		sc.nextLine();
+		return customerChoice;
+	}
+
+	public static int contractMenu() {
+		System.out.println("***********Contract Menu***********");
+		System.out.println("1. Add Contract\n2. Delete Contract"
+				+ "\n3. Display All Contract\n4. To be implemented\n5. Go to Dashboard\n6. Exit");
+		System.out.println("*********************************");
+		System.out.println("Please enter your choice from Contract Menu");
+		int contractChoice = sc.nextInt();
+		sc.nextLine();
+		return contractChoice;
+	}
+	public static int productMenu() {
+		System.out.println("***********Product Menu***********");
+		System.out.println("1. Add Product\n2. Delete Product"
+				+ "\n3. Display All Product\n4. Search Product\n5. Go to Dashboard\n6. Exit");
+		System.out.println("*********************************");
+		System.out.println("Please enter your choice from Product Menu");
+		int productChoice = sc.nextInt();
+		sc.nextLine();
+		return productChoice;
+	}
+	
+	public static int landMenu()
+	{
+		System.out.println("***********Land Menu***********");
+		System.out.println("1. Add Land Record\n2. Update Land record\n3. Display All Land Records\n4. Go to Dashboard\n5. Exit");
+		System.out.println("*********************************");
+		System.out.println("Please enter your choice from Land Menu");
+		int landChoice = sc.nextInt();
+		sc.nextLine();
+		return landChoice;
+	}
+	
+	public static ContractBean readContractDetails(ContractBean contract) 
+	{
+		contract = new ContractBean();
+		System.out.println("Please enter Contract No");
+		contract.setContractNo(sc.nextLine());
+		System.out.println("Please enter Customer Id");
+		contract.setCustomerId(sc.nextLine());
+		System.out.println("Please enter Product Id");
+		contract.setProductId(sc.nextLine());
+		System.out.println("Please enter Haulier Id");
+		contract.setHaulierId(sc.nextLine());
+		System.out.println("Please enter Delivery Date");
+		contract.setDeliveryDate(sc.nextLine());
+		System.out.println("Please enter Day of Delivery");
+		contract.setDay(sc.nextLine());
+		System.out.println("Please enter Quantity ");
+		contract.setQuantity(sc.nextInt());
+		return contract;
+	}
+
+	public static CustomerBean readCustomerDetails(CustomerBean customer) 
+	{
+		customer = new CustomerBean();
+		System.out.println("A. Add Customer\nB. Add Haulier\nC. Add Admin\nPlease enter category");
+		char actChoice= sc.next().charAt(0);
+		String userType = null;
+		if(actChoice=='A' || actChoice=='a')
+			userType="Cust";
+		else if(actChoice=='B' || actChoice=='b')
+			userType="Haul";
+		else if(actChoice=='C' || actChoice=='c')
+			userType="Admn";
+		System.out.println("Please enter Customer ID");
+		sc.nextLine();
+		customer.setCustomerID(userType + "_" + sc.nextLine());
+		System.out.println("Please enter Customer Name");
+		customer.setCustomerName(sc.nextLine());
+		System.out.println("Please enter Street Add1");
+		customer.setStreetAdd1(sc.nextLine());
+		System.out.println("Please enter Street Add2");
+		customer.setStreetAdd2(sc.nextLine());
+		System.out.println("Please enter Town");
+		customer.setTown(sc.nextLine());
+		System.out.println("Please enter Postal Code");
+		customer.setPostalCode(sc.nextInt());
+		sc.nextLine();
+		System.out.println("Please enter Email ");
+		customer.setEmail(sc.nextLine());
+		System.out.println("Please enter Mobile Number");
+		customer.setMobileNumber(sc.nextLine());
+		System.out.println("Please enter Password");
+		customer.setPassword(sc.nextLine());
+		return customer;
+	}
+	
+	public static LandBean readLandDetails(LandBean landBean) {
+		landBean = new LandBean();
+		System.out.println("Please enter Land ID");
+		landBean.setLandId(sc.nextLine());
+		System.out.println("Please enter Owner Id");
+		landBean.setOwnerId(sc.nextLine());
+		System.out.println("Please enter Land Area in Square Feet");
+		landBean.setLandAreaInSqFeet(sc.nextInt());
+		sc.nextLine();
+		System.out.println("Please enter Land Latitude");
+		landBean.setLandLatitude(sc.nextLine());
+		System.out.println("Please enter Land Longitude");
+		landBean.setLandLatitude(sc.nextLine());
+		System.out.println("Please enter Land Cost");
+		landBean.setLandCost(sc.nextDouble());
+		System.out.println("Please enter Land Tax ");
+		landBean.setLandTax(sc.nextDouble());
+		sc.nextLine();
+		
+		return landBean;
+	}
+
+}
