@@ -1,0 +1,36 @@
+.one
+{
+    float: left;
+    padding: 5px;
+}
+
+.two
+{
+    float: right;
+    padding: 5px;
+}
+
+img
+{
+    border-radius: 70%;
+    height: 250px;
+    width: 250px;
+    padding:30px 550px;
+}
+
+h1
+{
+    align-self: center;
+    float: center;
+}
+
+ul li
+    {
+        list-style: none;
+        float: center;       
+    } 
+
+.anc
+{
+    text-decoration: none;
+}

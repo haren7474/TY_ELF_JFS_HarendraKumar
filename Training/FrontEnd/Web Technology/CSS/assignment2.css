@@ -1,0 +1,66 @@
+.updiv
+{ 
+border: solid red;
+width: 100%;
+height: 350px;
+} 
+.downdiv 
+{ 
+    border: solid blue;
+    width: 100%;
+    height: 350px;
+    background:skyblue;
+} 
+
+.leftdiv 
+{ 
+    border: solid green;
+    width: 50%;
+    height: 350px;
+    background-color: yellowgreen;
+} 
+.rightdiv 
+{ 
+    border: solid yellow;
+    width: 50%;
+    height: 350px;
+   background-color:springgreen;
+} 
+
+.one
+{
+    border: solid black;
+    width: 100%;
+    height: 172px;
+}
+
+.two
+{
+    border: solid blue;
+    width: 100%;
+    height: 172px;
+}
+
+.oneone
+{
+    border: solid green;
+    width: 50%;
+    height: 345px;
+    background-color: silver;
+}
+
+.twoone
+{
+    border: solid pink;
+    width: 50%;
+    height: 172px;
+    background-color: seagreen;
+}
+
+.twotwo
+{
+    border: solid rgb(231, 16, 160);
+    width: 50%;
+    height: 172px;
+}
+

@@ -1,0 +1,30 @@
+img
+{
+    border-radius: 70%;
+    height: 250px;
+    width: 250px;
+    padding:30px 550px;
+}
+
+.one
+{
+    float: left;
+    padding: 5px;
+}
+
+.two
+{
+    float: right;
+    padding: 5px;
+}
+
+.loginForm
+{
+    
+    align-content: center;
+    width: 30%;
+    height: 350px;
+    float: center;
+    text-align: center;
+    padding-left: 100px;
+}

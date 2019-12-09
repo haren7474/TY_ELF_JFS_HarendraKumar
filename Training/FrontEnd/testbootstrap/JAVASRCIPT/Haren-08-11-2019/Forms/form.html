@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 25%;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <form name="loginForm" onsubmit="return validateForm()">
+        <div>
+            <input name="username" type="text" placeholder="Enter Username"
+        </div>
+
+        <p id="pele"
+        style="display: none; font-size: 12px; color: red;">
+        Please enter user name
+    </p>
+        <div>
+                <input name="password" type="text" placeholder="Enter Password"
+        </div>
+
+        <p id="passwordMsg"
+        style="display: none; font-size: 12px; color: red;">
+        Please enter password
+    </p>
+
+        <div>
+            <button name="login">Login</button>
+        </div>
+
+    </form>
+
+    <script src="form.js"></script>
+</body>
+</html>

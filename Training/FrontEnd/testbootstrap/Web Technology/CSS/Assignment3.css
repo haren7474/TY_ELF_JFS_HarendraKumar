@@ -1,0 +1,41 @@
+img
+{
+    border-radius: 70%;
+    height: 250px;
+    width: 250px;
+    padding:30px 550px;
+}
+
+.one
+{
+    float: left;
+    padding: 5px;
+}
+
+.two
+{
+    float: right;
+    padding: 5px;
+}
+
+.loginForm
+{
+    
+    align-content: center;
+    width: 30%;
+    height: 350px;
+    float: center;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.aboutLogin
+{
+    margin-left: 850px;  
+    margin-top: -250px;
+    width: 70%;
+    height: 350px; 
+    font-size: 60px;
+    color: seagreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

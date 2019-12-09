@@ -1,0 +1,88 @@
+.full
+{
+    border:springgreen solid;
+    width: 100%;
+    height:650px;
+}
+
+.one
+{
+    border: green solid;
+    width: 30%;
+    height:280px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-image: url("gallery.jpg");
+    background-size: 350px;
+}
+
+.two
+{
+    border: yellow solid;
+    width: 30%;
+    height:280px;
+    margin-left: 440px;
+    margin-top: -285px;
+    background-image: url("7.jpg");
+    background-size: 400px;
+}
+
+.three
+{
+    border: teal solid;
+    width: 30%;
+    height:280px;
+    margin-left: 865px;
+    margin-top: -287px;
+    background-image: url("2.jpg");
+    background-size: 200px;
+}
+
+.four
+{
+    border:palegreen solid;
+    width: 30%;
+    height:270px;
+    margin: 15px;
+    background-image: url("3.jpg");
+    background-size: 400px;
+}
+
+.five
+{
+    border:seagreen solid;
+    width: 30%;
+    height:280px;
+    margin-left: 440px;
+    margin-top: -300px;
+    background-image: url("1.jpg");
+    background-size: 350px;
+}
+
+.six
+{
+    border: springgreen solid;
+    width: 30%;
+    height:280px;
+    margin-left: 865px;
+    margin-top: -287px;
+    background-image: url("8.jpg");
+    background-size: 450px;
+}
+
+.oneA
+{
+    float: left;
+    padding: 5px;
+}
+
+.twoA
+{
+    float: right;
+    padding: 5px;
+}
+
+body{
+    background-image: url("10.jpg");
+    background-size: cover;
+}
