@@ -1,0 +1,6 @@
+package com.tyss.empspringmvc.dao;
+
+public class EmployeeDaoImpl implements EmployeeDAO
+{
+	
+}

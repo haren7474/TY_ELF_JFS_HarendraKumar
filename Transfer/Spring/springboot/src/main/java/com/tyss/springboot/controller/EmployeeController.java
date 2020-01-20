@@ -1,0 +1,108 @@
+package com.tyss.springboot.controller;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tyss.springboot.dto.EmployeeBean;
+import com.tyss.springboot.dto.EmployeeResponse;
+import com.tyss.springboot.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+
+	@Autowired
+	private EmployeeService service;
+
+	// Produces will be present for all
+	// Consume will be present only for Object
+
+	@PostMapping(path = "/auth", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+	public EmployeeResponse auth(@RequestBody EmployeeBean bean) {
+		EmployeeBean employeeBean = service.auth(bean.getEmail(), bean.getPassword());
+		EmployeeResponse response = new EmployeeResponse();
+		if (employeeBean != null) {
+			response.setStatusCode(201);
+			response.setDescription("Employee found for given credentials");
+			response.setMessage("success");
+			response.setBean(Arrays.asList(employeeBean));
+		} else {
+			response.setStatusCode(401);
+			response.setDescription("invalid credentials");
+			response.setMessage("failure");
+		}
+		return response;
+	}
+
+	@PostMapping(path = "/register", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+	public EmployeeResponse register(@RequestBody EmployeeBean bean) {
+		EmployeeResponse response = new EmployeeResponse();
+		if (service.register(bean)) {
+			response.setStatusCode(201);
+			response.setDescription("Employee registered");
+			response.setMessage("success");
+		} else {
+			response.setStatusCode(401);
+			response.setDescription("Email already exists");
+			response.setMessage("failure");
+		}
+		return response;
+	}
+
+	@GetMapping(path = "/get", produces = MediaType.APPLICATION_JSON_VALUE)
+	public EmployeeResponse searchEmployee(@RequestParam("key") String key) {
+		EmployeeResponse response = new EmployeeResponse();
+		List<EmployeeBean> beanList = service.getEmployees(key);
+		if (beanList != null && beanList.size() > 0) {
+			response.setStatusCode(201);
+			response.setDescription("Employee found with given key");
+			response.setMessage("success");
+			response.setBean(beanList);
+		} else {
+			response.setStatusCode(401);
+			response.setDescription("no such employee has given key");
+			response.setMessage("failure");
+		}
+		return response;
+	}
+
+	@PutMapping(path = "/change-password", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+	public EmployeeResponse changepassword(@RequestBody EmployeeBean bean) {
+		EmployeeResponse response = new EmployeeResponse();
+		if (service.changePassword(bean.getId(), bean.getPassword())) {
+			response.setStatusCode(201);
+			response.setDescription("Password has been updated");
+			response.setMessage("success");
+		} else {
+			response.setStatusCode(401);
+			response.setDescription("Password could not be updated");
+			response.setMessage("failure");
+		}
+		return response;
+	}
+
+	@DeleteMapping(path = "/delete/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public EmployeeResponse deleteEmployee(@PathVariable("id") int id) {
+		EmployeeResponse response = new EmployeeResponse();
+		if (service.deleteEmployee(id)) {
+			response.setStatusCode(201);
+			response.setDescription("Employee deleted");
+			response.setMessage("success");
+		} else {
+			response.setStatusCode(401);
+			response.setDescription("Emplyee id not found!!!!");
+			response.setMessage("failure");
+		}
+		return response;
+	}
+}

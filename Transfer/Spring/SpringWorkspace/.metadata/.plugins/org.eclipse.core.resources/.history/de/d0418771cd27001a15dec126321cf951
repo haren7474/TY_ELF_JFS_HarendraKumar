@@ -1,0 +1,5 @@
+package com.tyss.springrest.exception;
+
+public class EmployeeException extends RuntimeException{
+	private String msg;
+}
