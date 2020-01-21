@@ -1,0 +1,16 @@
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color:rgb(183, 243, 183);
+    border: 1px solid rgba(0,0,0,.8);
+    color:black;
+    border-radius: 5%;
+}
+
+.card {
+    border-radius: 10%;
+}
+
+.card-body {
+    background-color: lightyellow;
+}
