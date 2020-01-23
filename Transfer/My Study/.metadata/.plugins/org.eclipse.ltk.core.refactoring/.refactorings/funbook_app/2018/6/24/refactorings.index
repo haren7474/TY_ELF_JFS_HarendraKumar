@@ -1,0 +1,6 @@
+1528627044038	Move 'error.jsp' to 'web-resources'
+1528627055781	Move 'error.jsp' to 'WEB-INF'
+1528627067306	Move 'error.jsp' to 'webapp'
+1528698697372	Rename resource 'login.jsp'
+1528698707061	Rename resource 'login2.jsp'
+1528826141685	Move 'register.jsp' to 'webapp'

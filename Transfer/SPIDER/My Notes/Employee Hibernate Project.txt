@@ -1,0 +1,7 @@
+Create a hibernate project which performs following operations.
+1. Create- In this we should thale input from users for creating employee data.
+2. Read- This method will allow me to search for an employee with the help of primary key. check if present as well
+3. Update- It takes the information from user to search the given emp and which attribute of the emp to be updated.
+4. Delete- This is used to remove the emp if it is present
+
+Note: These operations should happen until the user wants to exit.

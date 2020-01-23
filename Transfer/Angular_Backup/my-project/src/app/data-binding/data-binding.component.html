@@ -1,0 +1,47 @@
+<ng-content></ng-content>
+
+<p>data-binding works!</p>
+
+<!-- String Interpolation -->
+<h1>{{10+20}}</h1> 
+<h2>{{name}}</h2>
+
+
+<!-- Property Binding -->
+<img [src]="imgUrl" alt="cracker">
+
+<!-- Style Binding -->
+<p [style.background]= 'flag ? "green" : "red" '
+[style.color]= 'flag ? "white" : "black" '>
+Style Binding
+</p>
+
+<!-- Class Binding -->
+<p [class.blind]="flag" [class.not-blind]='flag'>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum possimus dolorem nobis quo optio saepe omnis pariatur quisquam alias maiores libero doloribus perferendis, quis, fuga culpa exercitationem doloremque eius! Maiores?
+</p>
+
+<!-- Event Binding -->
+<button (click) ='clickMe()' class="btn btn-outline-primary">
+    click me
+</button>
+
+<p [style.background]= 'isChange ? "green" : "red" '
+[style.color]= 'isChange ? "white" : "black" '>
+Even Binding changes
+</p>
+
+<!-- Event Binding Example 2 (Template Reference Variable)-->
+<input type="=text" name="myInput" #myInput>
+<button (click) ='clickMe2(myInput)' class="btn btn-outline-info">
+    click me
+</button>
+
+
+<!-- Two Way data Binding -->
+<input type="=text" name="twoWayData" [(ngModel)]='twoWayData'>
+{{twoWayData}}
+
+<button (click) ='printData()' class="btn btn-outline-danger">
+    click me
+</button>

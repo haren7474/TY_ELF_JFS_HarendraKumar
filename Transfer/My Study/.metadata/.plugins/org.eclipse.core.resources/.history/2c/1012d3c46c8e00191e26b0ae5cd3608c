@@ -1,0 +1,10 @@
+package practice.constructors;
+
+public class MainClass 
+{
+	public static void main(String[] args) 
+	{
+		Sample s= new Sample();
+	}
+	
+}

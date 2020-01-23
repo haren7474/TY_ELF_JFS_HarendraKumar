@@ -1,0 +1,22 @@
+package com.tyss.empspringmvc.beans;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="employee_address_info")
+public class EmployeeAddressBean 
+{
+	private int id;
+	
+	private String addType;
+	
+	private String address1;
+	
+	private String address2;
+	
+	private EmployeeBean bean;
+}

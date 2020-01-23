@@ -1,0 +1,6 @@
+package edu.jpiders.javatest;
+
+public interface Movies
+{
+	getName(String);
+}

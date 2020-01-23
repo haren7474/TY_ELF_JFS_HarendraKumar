@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <li *ngFor='let lateComer of lateComers' class="list-group-item">
+        {{lateComer}}
+
+        <button class="btn btn-outline-primary float-right" (click)='deleteLateComer(lateComer)'>
+            Delete
+        </button>
+    </li>
+</ul>

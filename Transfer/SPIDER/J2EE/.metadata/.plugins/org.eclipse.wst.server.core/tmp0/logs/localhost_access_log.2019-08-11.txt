@@ -1,0 +1,6 @@
+127.0.0.1 - - [11/Aug/2019:12:40:07 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:12:40:19 +0530] "GET /PoliticianInfo/current?id=1 HTTP/1.1" 200 651
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:12:40:20 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:12:40:27 +0530] "GET /PoliticianInfo/current?id=2 HTTP/1.1" 200 577
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:12:40:33 +0530] "GET /PoliticianInfo/current?id=3 HTTP/1.1" 200 508
+0:0:0:0:0:0:0:1 - - [11/Aug/2019:12:40:52 +0530] "GET /PoliticianInfo/current?id=0 HTTP/1.1" 200 726

@@ -1,0 +1,26 @@
+1575872066866	Rename package 'com.tyss.hibernate.jpawithhibernate'
+1575872261905	Rename package 'com.tyss.hibernate.jpawithhibernate'
+1575885506578	Delete element
+1575885565387	Delete element
+1575885574251	Delete element
+1575885738295	Delete element
+1575889614862	Rename resource 'Persistance.xml'
+1576149010422	Rename type 'EmployeePersonal'
+1576149025272	Rename type 'EmployeeProfessional'
+1576152088390	Delete element
+1576156907623	Copy package
+1576157244720	Rename type 'OneToOne'
+1576158651742	Rename type 'EmployeePersonal'
+1576158669951	Rename type 'EmployeeProfessional'
+1576158839673	Copy package
+1576158878755	Rename type 'EmployeeExperience'
+1576200622480	Rename type 'ManyToOne'
+1576200665674	Copy compilation unit
+1576200695019	Rename type 'EmployeePersonal'
+1576201577881	Rename type 'EmployeePersonalBi'
+1576201805202	Copy package
+1576201842947	Copy package
+1576201956034	Copy compilation unit
+1576201975413	Rename type 'EmployeePersonal'
+1576202003718	Rename type 'TrainingInfo'
+1576202036627	Rename type 'ManyToManyTest'

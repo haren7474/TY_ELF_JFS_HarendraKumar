@@ -1,0 +1,9 @@
+package practice.constructors;
+
+public class Sample
+{
+	public Sample(int x)
+	{
+		System.out.println("Sample Constructor "+x);
+	}
+}

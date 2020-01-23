@@ -1,0 +1,34 @@
+package com.tyss.phonesimulator.services;
+
+import java.util.List;
+
+import com.tyss.phonesimulator.dao.ContactDao;
+import com.tyss.phonesimulator.dto.Contact;
+import com.tyss.phonesimulator.factory.ContactFactory;
+
+public class ContactServicesImpl implements ContactServices
+{
+	ContactDao cDao= ContactFactory.isntanceOfContactDaoImpl();
+	@Override
+	public boolean addContact(Contact contact) {
+		return cDao.addContact(contact);
+	}
+
+	@Override
+	public boolean deleteContact(int contactId) {
+		return cDao.deleteContact(contactId);
+	}
+
+	@Override
+	public boolean modifyContact(int contactId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Contact> getAllContact() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

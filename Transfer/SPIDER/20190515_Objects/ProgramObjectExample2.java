@@ -1,0 +1,80 @@
+//Example where we can wee 3 reference variables pns1, pns2, pns3 and referring to the same object new PrintNonStatic(). So here if we change the value from any reference varriable, it will be reflected for all.
+
+
+class ProgramObjectExample2
+{
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("Main Method Begins");
+
+		//Creating 3 Object of class PrintNonStatic which are referred by pns1, pns2, pns3
+		PrintNonStatic pns1= new PrintNonStatic();
+		PrintNonStatic pns2= pns1;
+		PrintNonStatic pns3= pns2;	
+		
+		//Accessing Data Members: Non Static
+		System.out.println("\n***Originol Values:***");
+		System.out.println("pns1.x " + pns1.x);
+		System.out.println("pns2.x " + pns2.x);
+		System.out.println("pns3.x " + pns3.x);
+
+		//Accessing Non Static Methods
+		pns1.printNonStatic();
+		pns2.printNonStatic();
+		pns3.printNonStatic();
+
+		//Reassignment
+		pns2.x=1000;
+
+		//Accessing Data Members: Non Static
+		System.out.println("\n***Re-assigned Values:***");
+		System.out.println("pns1.x " + pns1.x);
+		System.out.println("pns2.x " + pns2.x);
+		System.out.println("pns3.x " + pns3.x);
+
+		//Accessing Data Members:Static
+		System.out.println("\n***Static members:***");
+		System.out.println("y is static and value is " + PrintStatic.y);
+
+		PrintStatic.printStatic();
+
+
+		//Calling Static member with and without class object
+		System.out.println("\n***Static member with and without class object:***");
+		System.out.println("pns3.staticDataMemberZ " + pns3.staticDataMemberZ);
+		System.out.println("staticDataMemberZ is static and value is " + PrintNonStatic.staticDataMemberZ);
+
+	}
+}
+
+
+class PrintNonStatic
+{
+	//Non Static Data Member
+	public int x=10;
+
+
+	//Stat8c Data Member
+	static int staticDataMemberZ= 99;
+
+	//Non Static Method
+	public void printNonStatic()
+	{
+		System.out.println("Returning Print Method Non-Static");
+	}
+}
+
+
+class PrintStatic
+{
+	//Non Static Data Member
+	public static int y=10;
+
+
+	//Non Static Method
+	public static void printStatic()
+	{
+		System.out.println("Returning Print Method Static");
+	}
+}

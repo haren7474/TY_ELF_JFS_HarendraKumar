@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <title>Pseudo Classes</title>
+	
+	<style>
+	h1
+	{
+	color: green;
+	}
+
+	h1:hover
+	{
+		color: red;
+		cursor: pointer;
+	}
+
+	h2
+	{
+	color: Pink;
+	}
+
+	h2:active
+	{
+		color: Yellow;
+		cursor: pointer;
+	}
+
+	a
+	{
+		color: red;
+	}
+
+	a:visited
+	{
+		color: green:	
+	}
+
+	p::first-line
+	{
+		font-size: 25px;
+		color: #ff0033;
+	}
+	
+	/*TO change color etc while doing text selection*/
+	p::selection
+	{
+		background: yellow;
+		color: red;
+	}
+	
+	/*to Add at the end of the paragraph, we use After*/
+	p::after
+	{
+		content: "Hello World "
+	}
+
+	/*to Add at the begining of the paragraph, we use Before*/
+	p::before
+	{
+		content: "Hello World"
+	}
+
+	</style>
+
+ </head>
+ <body>
+	
+	<h1>This is paragraph p1</h1>
+	<h2> This is paragraph p2</h2>
+
+	<a href="file:///D:/SPIDER/WebTechnologies/CSS/OlympicCircles.html">Link  for Link Class</a>
+
+	<p>This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+	This is a paragraph. This is a paragraph. This is a paragraph. </p>
+
+ </body>
+</html>

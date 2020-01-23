@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+D:\TYSS_PROJECTS\SpringWorkspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+485642199.index
+502058192.index
+3239683873.index

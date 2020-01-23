@@ -1,0 +1,17 @@
+<div class="alert alert-danger" *ngIf='message'>{{message}}
+</div>
+
+<div class="col-md-3 card float-left" *ngFor='let product of products'>
+    <div class="card">
+        <div class="card-holder">
+            {{product.name}}
+        </div>
+        <div class="card-body">
+            <img [src]='product.image' alt="" width="100%" height="250 px" >
+        </div> 
+            <div class="card-footer">
+            Rs: {{product.price}}
+        </div>
+        <button class="btn btn-outline-primary" (click)='data.deleteProduct(product)'>Delete</button>
+    </div>
+</div>  

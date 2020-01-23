@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>My First Page</title>
+ </head>
+ <body bgcolor= 'red'>
+  <h1 align="center"> This is H1 Tag</h1>
+  <h2 align = "right"> This is H2 Tag</h2>
+  <h3 align = "left"> This is H3 Tag</h3>
+  <h4> This is H4 Tag</h4>
+  <h5> This is H5 Tag</h5>
+  <h6> This is H6 Tag, These H tags are Block Level Tags, as they take new Line</h6>
+
+<p>
+This is normal                        text, in  the form.
+<br><b>This is bold text, in  the form. These Tags are Inline Tags as they don't take new lines</b>
+<br><strong>This is strong text, in  the form.</strong>
+<br><i>This is Italic text, in  the form.</i>
+<br><u>This is Underline text, in  the form.</u>
+<br><b><i>This is bold and Italic, in  the form.</i></b>
+
+<br>BR Tags stands for Break Tag and it moves content to next line.<br> <b> 1 Line</b> <br> <i> 2 Line </i> 
+<br> BR tag is unpaired Tag as closing is not needed.
+
+<br> <del> Del Tag is used to do strikethrough</del>
+<br> <strike> Strike Tag is also used to do strikethrough, but use Del Tag(Recommended)</strike>
+<br> <mark> Mark Tag is used to highlighted the element</mark>
+
+<br> Sup tag is used to get Super Script for example 10<sup>2</sup>= 100
+<br> Sub tag is used to get Sub Script for example 10<sub>2</sub>
+
+<br> <sup>n</sup>C<sub>r</sub>
+</p>
+
+<p> 10<20 & </p>
+<p> &copy;  &larr; &rarr; &trade; &amp;  &alpha; &beta; &gamma;</p>
+<p> &copy; Facebook<small> &copy; </small></p>
+<p> giving &nbsp; &nbsp; &nbsp; &nbsp; multiple spaces  </p>
+
+ </body>
+</html>

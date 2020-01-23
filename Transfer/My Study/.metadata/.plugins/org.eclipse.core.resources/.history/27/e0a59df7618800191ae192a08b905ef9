@@ -1,0 +1,120 @@
+package database.connectionsAbstract;
+
+import java.util.Scanner;
+
+public class DatabaseAppTest 
+{
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) 
+	{
+		while (true) 
+		{
+			displayMainMenu();
+			
+			System.out.println("Please enter your choice");
+			int ch = sc.nextInt();
+
+			switch (ch) 
+			{
+			case 1: runConnection(new OracleDB());
+					break;
+					
+			case 2: runConnection(new SQLServerDB());
+					break;
+				
+			case 3: Db2DB db2 = new Db2DB();
+					runConnection(db2);
+					break;
+			
+			case 4:	System.exit(0);
+					break;
+
+			default: System.out.println("Invalid Choice");
+					break;
+
+			}
+
+		}
+	}
+	
+	public static void runConnection(Database classObj)
+	{
+		String setStatus = null;
+		
+		while (true) 
+		{
+			System.out.println("\n----Inside "+  classObj.getClass().getSimpleName()+ " Database-----");
+			displaySubMenu();
+		
+			System.out.println("Please enter your choice");
+			int choice = sc.nextInt(); // User Choice
+
+			// To get the Status from check status method (Connected/ Disconnected/ Not Started Yet)
+			String status = classObj.checkStatus(setStatus);
+
+			switch (choice) 
+			{
+			case 1:
+				if (status.equals("connected")) 
+				{
+					System.out.println("\nConnection>>>> Already Open; You can't open it again");
+				} 
+				else 
+				{
+					setStatus = "open";
+					classObj.connect();
+				}
+
+				break;
+
+			case 2:
+				if (status.equals("connected")) 
+				{
+					setStatus = "close";
+					classObj.disconnect();
+
+				} 
+				else if (status.equals("disconnected")) 
+				{
+					System.out.println("\nConnection>>>> Already Closed; You can't close it again");
+				}
+
+				else if (status.equals("Not started")) 
+				{
+					System.out.println("\nConnection>>>> Never started; You can't close without opening it");
+				}
+
+				break;
+
+			case 3:
+				status = classObj.checkStatus(setStatus);
+				System.out.println("\nConnection Status>>>>>>> " + status);
+				break;
+
+			case 4:
+				System.out.println("\n***Returning to Main Menu***");
+				main(null);
+				break;
+
+			default:
+				System.out.println("Invalid Choice");
+				break;
+
+			}
+		}
+	}
+	
+	public static void displayMainMenu() 
+	{
+		System.out.println("\n----Main Menu---");
+		System.out.print("-----------------\n|1. OracleDB    |\n|2. SqlServer DB|\n");
+		System.out.println("|3. Db2 DB      |\n|4. Exit        |\n ----------------");
+	}
+
+	public static void displaySubMenu() 
+	{
+		System.out.println("1. Connect\n2. Disconnect\n3. Check Status\n4. Return to Main Menu");
+	}
+
+}

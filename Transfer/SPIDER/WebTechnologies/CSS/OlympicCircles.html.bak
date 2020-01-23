@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ 
+  <title>Draw Square Using Div Tag</title>
+	<style>
+
+	#circle
+	{	
+		height: 200px;
+		width: 200px;
+		border: 3px red dotted;
+		border-radius: 100%
+	}
+
+	
+	.circle1
+	{
+	position: relative;
+	top: 100px;
+	left: 100px;
+	border-color: green;
+	}
+
+	.circle2
+	{
+	position: relative;
+	bottom: 100px;
+	left: 350px;
+	}
+
+	.circle3
+	{
+	position: relative;
+	bottom: 300px;
+	left: 600px;
+	}
+
+	.circle4
+	{
+	position: relative;
+	bottom: 400px;
+	left: 450px;
+	}
+
+	.circle5
+	{
+	position: relative;
+	bottom: 600px;
+	left: 200px;
+	}
+
+	</style>
+ </head>
+
+ <body>
+  
+	<div id= "circle" class= "circle1" > </div> 
+	<div id= "circle" class= "circle2"> </div> 
+	<div id= "circle" class= "circle3"> </div> 
+	<div id= "circle" class= "circle4"> </div>
+	<div id= "circle" class= "circle5"> </div>
+
+
+ </body>
+</html>

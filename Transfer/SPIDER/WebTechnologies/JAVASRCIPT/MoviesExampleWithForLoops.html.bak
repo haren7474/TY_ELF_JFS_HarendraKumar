@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Object</title>
+ </head>
+ <body>
+
+<pre>
+<script>
+
+		//Creating Movie object in array.
+		var Movies= [
+					{name: "Legend", Language: "Telugu", rating: 9, watched: false},
+					{name: "Hello", Language: "Hindi", rating: 8, watched: true},
+					{name: "Inception", Language: "English", rating: 9.5, watched: true},
+					{name: "Avengers", Language: "English", rating: 10, watched: true},
+					{name: "Soorma", Language: "Hindi", rating: 7, watched: false},
+					];
+		//For in loop, it gives the keys
+		for(var x of Movies)
+		{
+			var w="";
+			if(x.watched)
+			{
+				w ="watched";
+			}
+			else
+			{
+				w="not watched";
+			}
+
+			document.writeln("I have "+ w+ " movie "+ x.name+ " in " + x.Language + " with rating "+ x.rating);
+		}
+
+  </script>
+</pre>
+
+ </body>
+</html>

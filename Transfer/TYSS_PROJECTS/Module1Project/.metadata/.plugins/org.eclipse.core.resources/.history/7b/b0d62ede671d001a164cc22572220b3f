@@ -1,0 +1,6 @@
+package com.tyss.phonesimulator.services;
+
+public class ContactServicesImpl implements ContactServices
+{
+
+}

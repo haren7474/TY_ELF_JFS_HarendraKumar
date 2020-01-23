@@ -1,0 +1,53 @@
+class stringTest
+{
+	public static void main(String[] args) 
+	{
+		String s1= "Hello how are you";
+
+		System.out.println(s1.length()+ " This is string length\n");
+		System.out.println(s1.charAt(0) + " This is char present at zero index\n");
+
+
+		//Printing String as it is with for loop
+		System.out.println("****Printing String as it is with for loop****");
+
+		for(int i=0; i< s1.length(); i++)
+		{
+			System.out.print(s1.charAt(i));
+		}
+		
+
+
+		//Reverse of a string
+		System.out.println("\n************Reverse String********");
+
+		for(int i=s1.length()-1; i>=0; i--)
+		{
+			System.out.print(s1.charAt(i));
+		}
+		
+		//Printing Reverse but word intact
+		System.out.println("\n********Printing: You are how hello********");
+		String[] a1= s1.split(" ");
+		//System.out.print(s1.length());
+		//System.out.print(a1.length);
+		//System.out.print(" ");
+
+		for(int i=a1.length-1; i>=0;i--)
+		{
+					System.out.print(a1[i]+" ");
+		}
+
+
+		//Printing wirh same order just words revers
+		System.out.print("\n*********Printing: olleH woh era uoY*****");
+		for(int i=0; i<a1.length;i++)
+		{
+			for(int j=a1[i].length()-1; j>=0; j--)
+			{
+					System.out.print(a1[i].charAt(j));
+			}
+			System.out.print(" ");
+		}
+	}
+}

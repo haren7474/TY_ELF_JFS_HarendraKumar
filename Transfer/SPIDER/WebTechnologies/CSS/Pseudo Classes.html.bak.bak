@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <title>Pseudo Classes</title>
+	
+	<style>
+	h1
+	{
+	color: green;
+	}
+
+	h1:hover
+	{
+		color: red;
+		cursor: pointer;
+	}
+
+	h2
+	{
+	color: Pink;
+	}
+
+	h2:active
+	{
+		color: Yellow;
+		cursor: pointer;
+	}
+
+	a
+	{
+		color: red;
+	}
+
+	a:visited
+	{
+		color: green:	
+	}
+	</style>
+	
+ </head>
+ <body>
+	
+	<h1>This is paragraph p1</h1>
+	<h2> This is paragraph p2</h2>
+
+	<a href="">Link  for Link Class</a>
+
+ </body>
+</html>

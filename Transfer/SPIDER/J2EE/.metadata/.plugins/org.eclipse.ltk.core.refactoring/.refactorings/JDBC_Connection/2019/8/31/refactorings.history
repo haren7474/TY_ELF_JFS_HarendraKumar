@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;JDBC_Connection&apos;&#x0D;&#x0A;- Original project: &apos;JDBC_Connection&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     edu.jspiders.j2ee.adminemployeemodule.EmpSingletonClass.java&#x0D;&#x0A;     edu.jspiders.j2ee.adminemployeemodule.SingletonMain.java" description="Delete elements" element1="/src&lt;edu.jspiders.j2ee.adminemployeemodule{EmpSingletonClass.java" element2="/src&lt;edu.jspiders.j2ee.adminemployeemodule{SingletonMain.java" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1564721765334" subPackages="false" version="1.0"/>
+</session>

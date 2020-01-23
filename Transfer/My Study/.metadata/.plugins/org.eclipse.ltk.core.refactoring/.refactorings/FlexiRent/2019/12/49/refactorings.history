@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;ForestryManagementSystem_Database/src/com.tyss.fms.controller&apos;&#x0D;&#x0A;- Original project: &apos;FlexiRent&apos;&#x0D;&#x0A;- Destination element: &apos;ForestryManagementSystem_Database/src/com.tyss.fms.controller&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.flexirent.utility.DBConnection.java&#x0D;&#x0A;     com.flexirent.utility.Validation.java" description="Copy compilation units" destination="=ForestryManagementSystem_Database/src&lt;com.tyss.fms.controller" element1="/src\/main\/java&lt;com.flexirent.utility{DBConnection.java" element2="/src\/main\/java&lt;com.flexirent.utility{Validation.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1575526287170" units="2" version="1.0"/>
+</session>

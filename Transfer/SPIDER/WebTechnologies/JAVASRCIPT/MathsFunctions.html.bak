@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ 
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		document.writeln(Math.floor(5.9) +"<br>");
+		document.writeln(Math.round(5.4) +"<br>");
+		document.writeln(Math.sqrt(9) +"<br>");
+		document.writeln(Math.pow(9,2) +"<br>");
+		//document.writeln(Math.hypot(3,4) +"<br>");
+		
+		var d= new Date();
+		document.writeln(d + "<br>");
+		document.writeln(d.getDate() +"<br>");
+		document.writeln(d.getDay() +"<br>");
+		document.writeln(d.getFullYear() +"<br>");
+		document.writeln(d.getMonths() +"<br>");
+			
+	</script>	
+ </body>
+</html>

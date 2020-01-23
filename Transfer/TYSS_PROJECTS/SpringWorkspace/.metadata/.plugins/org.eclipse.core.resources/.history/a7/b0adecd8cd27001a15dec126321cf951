@@ -1,0 +1,5 @@
+package com.tyss.springrest.controller;
+
+public class EmployeeControllerAdvice {
+
+}

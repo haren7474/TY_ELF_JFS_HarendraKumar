@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  
+  <title>FlexiRent Registration</title>
+ </head>
+ <body bgcolor='#99ffcc'>
+  <form method="get" action="">
+
+	<label> First Name: </Label>
+	<input type='text' name='fname'> <br>
+
+	<label> Last Name: </Label>
+	<input type='text' name='lname'> <br>
+
+	<label> Mobile </Label>
+	<input type='number' name='mobile'> <br>
+
+	<label> Email </Label>
+	<input type='email' name='email'><br>
+
+	<label> Age: </Label>
+	<input type='number' name='age' min=0 max=100><br>
+
+	
+	<fieldset>
+		<legend> Gender</legend>
+		<input type='radio' name ='gen' value='M' checked> <label> Male</label><br>
+		<input type='radio' name ='gen' value='F'> <label> Female</label><br>
+		<input type='radio' name ='gen' value='O'> <label> Others</label><br>
+	</fieldset>
+
+
+	<fieldset>
+	<legend> Login Information</legend>
+		<label> User Name: </Label>
+		<input type='text' name='username' value='Harendra' required><br>
+
+		<label> Password: </Label>
+		<input type='password' name='pswd' placeholder='enter password' required><br>
+	</fieldset>
+
+	
+	<label>City</label>
+		<select name="place">
+		<option>Ooty</option>
+		<option selected>Coorg</option>
+		option>Munnar</option>
+		<option disabled>Chikmanglur</option>
+	
+	</select>
+	<br><br>
+
+	<label>Upload File:</label><br>
+	<input type="file" name="resume" accept=".pdf"> <br><br>
+
+	<input type='submit' value="Register">
+
+ </body>
+</html>

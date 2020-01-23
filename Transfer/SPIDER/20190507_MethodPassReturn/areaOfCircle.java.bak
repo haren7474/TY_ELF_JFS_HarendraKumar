@@ -1,0 +1,22 @@
+class areaOfCircle
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Main method started");
+		final double pi=3.14;
+		double rad=5.34;
+		areaOfCircle(pi, rad);
+		System.out.println("Main method ended");
+	}
+
+	public static void areaOfCircle(double pi, double rad)
+	{
+		double area=pi*rad*rad;
+		printResult(area);
+	}
+
+	public static void printResult(double  area)
+	{	
+		System.out.println("Area of circle is = "+area+" cm square");
+	}
+}

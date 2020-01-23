@@ -1,0 +1,58 @@
+package com.tyss.phonesimulator.controller;
+
+import java.util.Scanner;
+
+public class SearchAndContact {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void searchContact() {
+		while (true) {
+			int todoChoice = ContactIO.contactMenu();
+			switch (todoChoice) {
+
+			case 1:
+				char ch;
+				if (ContactIO.checkPresence()) {
+					System.out.println("calling......");
+					do {
+						System.out.println("Please press C to cancel the call ");
+						ch = sc.next().charAt(0);
+					} while (ch != 'c');
+					{
+						System.out.println("Call ended");
+					}
+
+				} else
+					System.out.println("Contact not found");
+				break;
+
+			case 2:
+				if (ContactIO.checkPresence()) {
+					System.out.println("Please enter a message to send");
+					String msg = sc.next();
+					System.out.println("Sending message......" + msg + ".....");
+					System.out.println("\nMessage has been sent\n");
+
+				} else
+					System.out.println("Contact not found");
+
+				break;
+
+			case 3:
+				return;
+
+			case 4:
+				System.exit(0);
+				break;
+
+			default:
+				System.out.println("Inlavid Choice, please try again!!!!");
+			}
+		}
+	}
+	
+	public static void PerformCrud()
+	{
+		
+	}
+}

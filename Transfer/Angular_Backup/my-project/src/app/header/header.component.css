@@ -1,0 +1,15 @@
+#myButton1{
+    margin-top: 1px;
+    margin-right: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#myButton2{
+    margin-top: 1px;
+    margin-right: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

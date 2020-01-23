@@ -1,0 +1,41 @@
+package com.tyss.empspringmvc.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceUnit;
+
+import org.springframework.stereotype.Repository;
+
+import com.tyss.empspringmvc.beans.EmployeeBean;
+
+@Repository
+public class EmployeeDaoImpl implements EmployeeDAO
+{
+	@PersistenceUnit
+	private EntityManagerFactory entityManagerFactory;
+
+	@Override
+	public EmployeeBean auth(String email, String password) {
+		EntityManager entityManager= entityManagerFactory.createEntityManager();
+		
+	}
+
+	@Override
+	public boolean register(EmployeeBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public EmployeeBean getEmployee(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean changePassword(int id, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+}

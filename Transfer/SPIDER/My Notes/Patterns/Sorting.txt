@@ -1,0 +1,49 @@
+Selection Sort
+It works on the principal of finding the which is holding the smallest element and performing a single swap in each pass.
+
+Insertion Sort:
+It works on the principal of Inserting a value at given location by performing shifting.
+
+
+WAP to find all the pairs which give a difference value of 1
+
+
+
+Steps to perform Dnso
+1. Create an object of Treeset with help of no argument constructor.
+2. Whichever class we are trying to insert should implement comparable interface.
+3. The class should provide implentation for compareTo().
+4. Add the corresponding object inside the Treeset.
+
+
+Steps to work with Cso
+1. Create the independent class which implements comparator interface and provide implentation for compare().
+2. Create a Treeset Object with the help of Argument constructor which will accept object of implementation class of comparator.
+
+Ques: Create a collection which will have a group of Employee objects and perform the following operations:
+a. Display all employees int ASC order of empId where empId is String type.
+b. Remove all employees who have <5 years of experience.
+3. Count the number of employees who have < 2 years of ext, b/n 2-5 and more than 5.
+
+
+Map: 
+Preddefined Interface, which is used to hold a groupd of entries. An entry is nothing but an association between two objects. It is also callled as key-value pairs.
+
+In Maps, we store the objects in terms of Key-Value pairs.
+
+Ques: 1 Create a Map which contains a group of entries of empId and empObject. Where empId is Key and EmpObject is value. And perform following operations:
+a. Display only those entries where the employee has an experience of > 3 years and earns more than 60k per month.
+b. Provie hike for employees based on below criteria.
+
+Criteria		Hike
+<= 2 Years		5%
+2-5			10%
+5+			12%
+
+c. Remove all the entries where the employees has rating < 3.
+
+String: It is a predifined Java Class whose object is used to hold a sequence of characters.
+	These characters can be digits, alphabets or special characters or combinination of all of them.
+
+
+

@@ -1,0 +1,20 @@
+package com.tyss.phonesimulator.factory;
+
+import com.tyss.phonesimulator.dao.ContactDao;
+import com.tyss.phonesimulator.dao.ContactDaoImpl;
+
+public class ContactFactory 
+{
+	private ContactFactory() {
+	}
+
+	public static ContactDao isntanceOfContactDaoImpl() {
+		ContactDao contactDao = new ContactDaoImpl();
+		return contactDao;
+	}
+
+	public static UserServices instanceOfCustomerServices() {
+		UserServices customerServices = new UserServicesImpl();
+		return customerServices;
+	}
+}

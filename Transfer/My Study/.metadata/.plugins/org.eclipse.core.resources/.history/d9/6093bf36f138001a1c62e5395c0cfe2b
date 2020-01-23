@@ -1,0 +1,9 @@
+package com.tyss.cucumberdemo.runner;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+@CucumberOptions(features= "./cucumberdemo/test/Features.feature")
+public class RunClass extends AbstractTestNGCucumberTests {
+
+}

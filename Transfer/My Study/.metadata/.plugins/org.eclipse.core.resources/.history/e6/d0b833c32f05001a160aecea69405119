@@ -1,0 +1,10 @@
+package edu.tyss.java.practise.assgn1;
+
+public class MainMethod 
+{
+	public MainMethod() 
+	{
+		AssignmentConstructor ac= new AssignmentConstructor("Harendra", 24, 65000);
+		System.out.println(ac.name+ "\n"+ ac.age +"\n" +ac.salary);
+	}
+}

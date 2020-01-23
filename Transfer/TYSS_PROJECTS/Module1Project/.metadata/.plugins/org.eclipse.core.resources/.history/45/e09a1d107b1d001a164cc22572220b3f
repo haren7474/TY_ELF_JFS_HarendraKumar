@@ -1,0 +1,13 @@
+package com.tyss.phonesimulator.controller;
+
+public class Test {
+
+	public static void main(String[] args) 
+	{
+		int i= 99167;
+		System.out.println();
+		
+
+	}
+
+}

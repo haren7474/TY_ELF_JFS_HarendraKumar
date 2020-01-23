@@ -1,0 +1,10 @@
+package edu.web.tests.geeks;
+
+public class RearrangePalindrom {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

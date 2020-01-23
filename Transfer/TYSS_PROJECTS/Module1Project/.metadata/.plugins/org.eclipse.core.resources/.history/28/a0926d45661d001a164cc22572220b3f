@@ -1,0 +1,10 @@
+package com.tyss.phonesimulator.dao;
+
+import java.util.List;
+
+public interface ContactDao 
+{
+	public List<Contact> getAllContract();
+	public boolean deleteContract(int contractId);
+	public boolean addContract(Contact contract);
+}

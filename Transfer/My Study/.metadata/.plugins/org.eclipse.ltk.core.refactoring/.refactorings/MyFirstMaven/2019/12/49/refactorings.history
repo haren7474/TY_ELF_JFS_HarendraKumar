@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.tyss.junit.MyFirstMaven.CalTest&apos; to &apos;TestCalculator&apos;&#x0D;&#x0A;- Original project: &apos;MyFirstMaven&apos;&#x0D;&#x0A;- Original element: &apos;com.tyss.junit.MyFirstMaven.CalTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.tyss.junit.MyFirstMaven.TestCalculator&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CalTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;com.tyss.junit.MyFirstMaven{CalTest.java[CalTest" matchStrategy="1" name="TestCalculator" qualified="false" references="true" similarDeclarations="false" stamp="1575445293238" textual="false" version="1.0"/>
+</session>

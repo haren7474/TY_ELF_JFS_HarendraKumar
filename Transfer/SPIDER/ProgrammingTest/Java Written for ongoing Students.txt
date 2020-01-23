@@ -1,0 +1,16 @@
+
+Java Written
+------------
+
+1. What is OOP ? explain in brief.
+2. Show overloading.
+3. Show constructor chaining and calling in the same program.
+4. Explain the access modifiers using a program.
+5. Give a example of Data Encapsulation.
+6. Explain inheritance and give example for all types of inheritance.
+
+Note:
+-----
+
+Please guys and girls don't write VTU type answers. I bloody don't have patience
+to read it. Explain me the program that will be more than enough.

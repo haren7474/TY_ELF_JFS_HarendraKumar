@@ -1,0 +1,10 @@
+package com.tyss.myfirstwebapp.servlets;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/seachUser2")
+public class SearchUser2 extends HttpServlet
+{
+	
+}

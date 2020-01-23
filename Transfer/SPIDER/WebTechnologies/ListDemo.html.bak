@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>List Demo</title>
+ </head>
+ <body bgcolor='#ffffcc'>
+	<h1> Ordered List</h1>
+		<ol type= "i">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ol>
+		
+		<img src="C:/Users/Lenovo/Pictures/haren.jpg" width="400" height="450" border="10" alt="" align= "right">
+
+		<ol type= "A">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+
+			
+		   <li> Apti</li>
+		</ol>
+
+		<ol type="1">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ol>
+
+		<ol start="10">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ol>
+
+		<ol type= "i">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ol>
+
+		<ol type= "a" start ="25">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ol>
+
+		<h1> Unordered List</h1>
+		<ul type= "circle">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ul>
+
+		<ul type= "disc">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ul>
+
+		<ul type= "square">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ul>
+
+		<ul type= "none">
+			<li> Java</li>
+			<li> C++</li>
+			<li> Sql</li>
+			<li> HTML</li>
+		</ul>
+<!-- This is a comment-->
+
+<!--Below example is for pre formatted text-->
+<pre>
+class preFormattedText
+	{
+		public static void main(String [] args)
+			{
+			System.out.println("Hello");
+			}
+	}
+</pre>
+ </body>
+</html>

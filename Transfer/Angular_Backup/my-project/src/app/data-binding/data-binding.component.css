@@ -1,0 +1,13 @@
+.blind {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.not-blind {
+    background-color: green;
+    color: black;
+    padding: 30px;
+    font-size: 30px;
+}

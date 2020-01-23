@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>ZooKeeper</title>
+
+   <style>
+
+	sub
+	{
+		color: red;
+	}
+	h1
+	{
+	border: 2px Green Solid;
+	padding-left: 350px;
+	color: #990033;
+	}
+	
+	td
+	{	
+	color: #336600;
+	}
+
+	legend
+	{
+	color: #3399cc;
+	}
+
+	#sub
+	{
+		color: #006633
+	}
+  </style>
+
+ </head>
+ <body bgcolor="#ccffcc">
+  
+<h1>Zoo Keeper Application Form</h1>
+<i>Please complete the form, Mandatory fields are marked with a <sub>*</sub></i>
+
+
+<fieldset>
+	<legend>Contact Details</legend>
+<table>
+<tr>
+	<td>Name<sub>*</sub></td>
+	<td><input type='text' name='name' required></td>
+	
+</tr>
+<tr>
+	<td>Telephone</td>
+	<td><input type='number' name='telephone'></td>
+	
+</tr>
+<tr>
+	<td>Email<sub>*</sub></td>
+	<td><input type='email' name='email' required></td>
+
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+	<legend>PERSONAL INFORMATION</legend>
+<table>
+<tr>
+	<td>Age<sub>*</sub></td>
+	<td><input type='Number' name='age' required></td>
+	
+</tr>
+ 
+ <tr>
+	<td>Gender</td>
+	<td>
+		<select name="gender">
+		<option>Male</option>
+		<option selected>Female</option>
+		<option>Other</option>
+	</td>
+</tr>
+
+<tr>
+	<td><sup>When did you first know <br>you wanted to be a zookeeper</sup></td>
+	<td><textarea cols=80 rows 30> </textarea></td>
+</tr>
+
+</table>
+</fieldset>
+
+<fieldset>
+		<legend> PICK YOU FAVOURITE ANIMALS</legend>
+		<table>
+		<tr>
+			<td><input type='checkbox' name ='sub' value='Zebra'> <label> Zebra</label><br></td>
+			<td><input type='checkbox' name ='sub' value='Cat'> <label> Cat</label><br></td>
+			<td><input type='checkbox' name ='sub' value='Anaconda'> <label> Anaconda</label><br></td>
+			<td><input type='checkbox' name ='sub' value='Human'> <label> Human</label><br></td>
+		</tr>
+		<tr>
+			<td><input type='checkbox' name ='sub' value='Eleplhant'> <label> Eleplhant</label><br></td>
+			<td><input type='checkbox' name ='sub' value='Wildebeast'> <label> Wildebeast</label><br></td>
+			<td><input type='checkbox' name ='sub' value='Pigeon'> <label> Pigeon</label><br></td>
+			<td><input type='checkbox' name ='sub' value='Carb'> <label> Crab</label><br></td>
+		</tr>
+		</table>
+	
+	</fieldset>
+
+<tr>
+	<td><input id="sub" type='submit' value="Submit Application"></td>
+</tr>
+
+</body>
+</html>

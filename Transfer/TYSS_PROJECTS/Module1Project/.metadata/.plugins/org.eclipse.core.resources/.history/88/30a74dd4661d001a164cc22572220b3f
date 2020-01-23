@@ -1,0 +1,9 @@
+package com.tyss.phonesimulator.dto;
+
+public class Contact 
+{
+	private int contactId;
+	private String contactName;
+	private String contactNumber;
+	private String contactGroup;
+}

@@ -1,0 +1,10 @@
+Feature: Login Action
+
+Scenario Outline: Successful login with valid credentials
+	Given User navigate to login page
+	When User enters username "<users>" and password "<pass>"
+	Then Login should be successful
+	Examples: 
+			|users|pass|
+			|trainee|trainee|
+			|admin|admin|

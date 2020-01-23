@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Object</title>
+ </head>
+ <body>
+
+<pre>
+<script>
+
+		//Creating object useing Diect Literals.
+		var pen= { color: "black",
+				   price: 10,
+				   brand: "camlin"
+					};
+		//For in loop, it gives the keys
+		for(var x in pen)
+		{
+			document.writeln(x+ "-->"+ pen[x]);
+		}
+
+
+		var arr= [10,20,30,40,50];
+		document.writeln("<br>This is your array keys");
+		for(var x in arr)
+		{
+			document.write(x+ " ");
+		}
+
+
+		document.writeln("<br>This is your array values");
+		for(var x in arr)
+		{
+			document.write(arr[x]+ " ");
+		}
+
+
+		document.writeln("<br>This is your array key values");
+		for(var x in arr)
+		{
+			document.writeln(x+ "-->"+ arr[x]);
+		}
+
+		//For of loop gives you the values
+		var arr1= [10,20,30,40,50];
+		document.writeln("<br>This is your array values");
+
+		for(var z of arr1)
+		{
+			document.write(z+" ");
+		}
+
+  </script>
+</pre>
+
+ </body>
+</html>

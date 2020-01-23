@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  
+  <title>My Form</title>
+ </head>
+ <body bgcolor='#99ffcc'>
+  <form method="get" action="">
+
+	<fieldset>
+	<legend> Login Information</legend>
+		<label> User Name: </Label>
+		<input type='text' name='username' value='Harendra' required><br>
+
+		<label> Password: </Label>
+		<input type='password' name='pswd' placeholder='enter password' required><br>
+	</fieldset>
+
+	<label> Age: </Label>
+	<input type='number' name='age' min=0 max=100><br>
+
+	<label> Email </Label>
+	<input type='email' name='email'><br>
+
+	<fieldset>
+		<legend> Gender</legend>
+		<input type='radio' name ='gen' value='M' checked> <label> Male</label><br>
+		<input type='radio' name ='gen' value='F'> <label> Female</label><br>
+		<input type='radio' name ='gen' value='O'> <label> Others</label><br>
+	</fieldset>
+
+	<fieldset>
+		<legend> Subjects</legend>
+		<input type='checkbox' name ='sub' value='c++' checked> <label> C++</label><br>
+		<input type='checkbox' name ='sub' value='java'> <label> Java</label><br>
+		<input type='checkbox' name ='sub' value='python'> <label> Python</label><br>
+	</fieldset>
+
+	<label>Place</label>
+		<select name="place">
+		<option>Ooty</option>
+		<option selected>Coorg</option>
+		option>Munnar</option>
+		<option disabled>Chikmanglur</option>
+	
+	</select>
+	<br><br>
+
+	<label>Upload File:</label><br>
+	<input type="file" name="resume" accept=".pdf"> <br><br>
+
+	<input type='submit' value="Register">
+
+ </body>
+</html>

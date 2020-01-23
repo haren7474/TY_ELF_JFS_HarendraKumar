@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Giving scope="prototype" allows creating multiple object else it is 
+		singleton by default -->
+
+	<bean id="hello" class="com.tyss.springcore.beans.Hello"> 
+	<!--scope="prototype"  init-method="init" destroy-method="destroy"--> 
+
+		<!-- Initialization through Property -->
+		<property name="message" value="I love Java"></property>
+		<property name="count" value="10"></property>
+	</bean>
+
+	<bean id="cat" class="com.tyss.springcore.beans.Cat">
+	</bean>
+
+	<bean id="dog" class="com.tyss.springcore.beans.Dog"
+		primary="true">
+	</bean>
+
+	<bean id="pet" class="com.tyss.springcore.beans.Pet" autowire="byType">
+		<property name="name" value="Jimmy" />
+		<!-- <property name="animal" ref="dog" /> We need not to wire this manually, spring can do it by using autowire.-->
+	</bean>
+
+	<bean id="bean" class="com.tyss.springcore.beans.BeanPostProcessorClass">
+	</bean>
+	
+	<bean id="factoryBean" class= "com.tyss.springcore.beans.BeanFactoryPostProcessorClass">
+	</bean>
+
+</beans>

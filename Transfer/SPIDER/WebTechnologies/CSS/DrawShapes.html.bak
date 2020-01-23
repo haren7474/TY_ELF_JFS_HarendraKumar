@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ 
+  <title>Draw Square Using Div Tag</title>
+	<style>
+	#square
+	{	
+		height: 200px;
+		width: 200px;
+		border: 3px red dotted;
+	}
+
+	#ractangle
+	{	
+		height: 200px;
+		width: 300px;
+		border: 3px red dotted;
+	}
+
+	#circle
+	{	
+		height: 200px;
+		width: 200px;
+		border: 3px red dotted;
+		border-radius: 100%
+	}
+
+	#triangle
+	{
+		height: 0px;
+		width: 0px;
+		border-top: 180px transparent solid;
+		border-right: 180px green solid;
+		border-left: 180px transparent solid;
+		border-bottom: 180px transparent solid;
+	}
+
+	#rightangTriangle
+	{
+		height: 0px;
+		width: 0px;
+		border-top: 200px transparent solid;
+		border-right: 200px transparent solid;
+		border-left: 200px green solid;
+		border-bottom: 200px Green solid;
+	}
+
+	#pos
+	{
+	border: 2px solid;
+	width: 200px;
+	position: fixed;
+	top: 55px;
+	left: 30px;
+
+	}
+
+	</style>
+ </head>
+
+ <body>
+  
+	<div id= "square"> This is a square </div> <br>
+	<div id= "ractangle"> This is a ractangle </div> <br>
+	<div id= "circle"> This is a circle </div> <br>
+	<div id= "triangle">Triangle</div><br>
+	<div id= "rightangTriangle">R A Triangle</div><br>
+
+	<div id= "pos"><h1> this is h1</h1></div>
+ </body>
+</html>

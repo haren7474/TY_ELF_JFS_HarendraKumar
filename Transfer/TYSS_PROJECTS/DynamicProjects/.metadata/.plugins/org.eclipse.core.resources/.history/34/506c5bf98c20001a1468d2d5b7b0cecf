@@ -1,0 +1,9 @@
+package com.tyss.myfirstwebapp.dao;
+
+import com.tyss.myfirstwebapp.beans.UserBean;
+
+public interface UserDao {
+	public UserBean searchUser(int userId);
+	public UserBean authenticate(int usedId, String password);
+	public String addUser(UserBean user);
+}

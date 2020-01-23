@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="452" key="DIALOG_X_ORIGIN"/>
+		<item value="247" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Before" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="Before"/>
+			<item value="nexti"/>
+			<item value="nextI"/>
+			<item value="next"/>
+			<item value="nextint"/>
+			<item value="sc.nextline()"/>
+			<item value="sc.nextInt()"/>
+			<item value="email"/>
+			<item value="L"/>
+			<item value="yyyy-"/>
+			<item value="yyyy"/>
+			<item value="user"/>
+			<item value="bill "/>
+			<item value="() + &quot;\t&quot; + get"/>
+			<item value="Customer"/>
+		</list>
+		<list key="replacehistory">
+			<item value="After"/>
+			<item value="Validation.readValidInteger()"/>
+			<item value="\t"/>
+			<item value="user"/>
+			<item value="kitchenObj"/>
+			<item value="food"/>
+			<item value="setStatus"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="284" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
+		<item value="33" key="DIALOG_X_ORIGIN"/>
+		<item value="179" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

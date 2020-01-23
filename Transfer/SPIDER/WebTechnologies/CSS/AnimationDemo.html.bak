@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  
+  <title>AnimationDemo</title>
+ </head>
+
+ <style>
+	div
+	{
+		height:250px; 
+		width: 250px;
+		background-image: repeating-linear-gradient(to bottom, red 25%, blue 35%, yellow 30%);
+	}
+
+	#div2
+	{
+	height: 250px;
+	width: 250px;
+	background-image: repeating-radial-gradient(green 5%, red 15%, blue 25%);
+	}
+
+	#div3
+	{
+	height: 250px;
+	width: 250px;
+	background-color: red;
+	animation-name: anima1;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	}
+
+	@keyframes anima1
+	{
+		from
+		{
+			background-color: red;
+		}
+		to
+		{
+			background-color: green;
+		}
+	}
+
+ </style>
+
+
+ <body>
+
+ <div></div><br>
+
+ <div id="div2"> </div><br>
+
+ <div id="div3">Div 3</div><br>
+  
+ </body>
+</html>

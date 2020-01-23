@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+ <head>  
+  <title>CSSDemo</title>
+
+  <style>
+  /* CSS Code*/
+  /* Element Selector*/
+	h4
+	{
+		/* CSS Code for all H4 Tags*/
+		color: #ff0066;
+		background-color: #66cc66;
+	}
+	p
+	{
+		/* CSS Code for all pagagraph Tags*/
+		color: #ffff66;
+		background-color: #003300;
+	}
+
+
+	/* Class Selector */
+	.myclass
+	{
+		/* CSS Code for selected h6 tags which has class as myclass*/
+		color: #ffffff;
+		background-color: #0033ff;
+	}
+
+
+	/* Id Selector */
+	#myid
+	{
+		/* CSS Code for selected h3 tags which has id as myid*/
+		color: #33ffff;
+		background-color: #006666;
+	}
+
+	body
+	{
+	background-image: url("C:/Users/Lenovo/Pictures/haren.jpg");
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	background-position: center;
+	background-attachment: fixed;
+
+	/* Border Properties */
+	border-style: groove;
+	border-color: red;
+	border-width: 5px;
+
+	}
+
+	/*Border Properties*/
+	h3
+	{
+		/*border-style: solid; */
+		border-bottom-style: solid;
+		border-top-style: dashed;
+		border-left-style: dashed;
+		border-right-style: dotted;
+		
+		border-bottom-color: red;
+		border-top-color: blue;
+		border-left-color: green;
+		border-right-color: orange;
+
+		border-bottom-width: 1px;
+		border-top-width: 2px;
+		border-left-width: 3px;
+		border-right-width: 4px;
+	}
+
+	h5
+	{
+		/* Above h3 header we can also do as below: */
+		border-bottom: red 5px dotted;
+		border-top: red 5px dashed;
+		border-left: red 5px dotted;
+		border-right: red 5px dashed;
+
+		/*To get curved edges*/
+		/*	border-radius: 100px;*/ 
+
+		/*To get curved edges for specific sides*/
+		border-top-right-radius: 100px;
+		border-bottom-left-radius: 100px;
+	}
+
+	div
+	{
+		border: 10px double red;
+	}
+
+  </style>
+
+  <link rel="stylesheet" href="myCSS.css" type= "text/css">
+
+ </head>
+
+ <body>
+
+	<!--Example for Inline CSS-->
+  <h3 style="color: #33ff66; background-color: #cc3366"> Example of Inline CSS</h3>
+  <h6> We can see above properties are affected only that line, not next line</h6>
+
+	<!--2a Example for Element Selector Internal CSS-->
+	<h4> This is h4 Header</h4>
+	<p> This is a normal paragraph</p>
+	<h4> This is also h4 Header</h4>
+	<p> This is also a normal paragraph</p>
+	<h4> This is also h4 Header</h4>
+
+
+	<!--2b Example for Class Selector Internal CSS-->
+	<h6 class="myclass"> This is h6 Header</h6>
+	<h6> This is h6 Header</h6>
+	<h6 class="myclass"> This is h6 Header</h6>
+	<h6> This is h6 Header</h6>
+
+
+	<!--2c Example for Id Selector Internal CSS-->
+	<h3 id="myid"> This is h3 Header</h3>
+	<h3> This is h3 Header</h3>
+	<h3 id="myid"> This is h3 Header</h3>
+
+	<!--3 Example for External CSS-->
+	<h2> This is h2 Header</h2>
+	<h2> This is h2 Header</h2>
+
+	<!--Example for Border properties-->
+	<h3>
+	jfhejegkjehj
+	fekghghuhhuihrg
+	gejgeghehgbew
+	egfejghiheioe3
+	ewgfejhehge3
+	hufguyegyu
+	</h3>
+
+	<h5> Hello this is H5 Header </h5>
+
+
+
+	<div>
+
+	<b> This is h3 in div tag</b>
+	<p>
+	This is  paragraph in div Tag
+	
+	</p>
+
+	</div>
+ </body>
+</html>

@@ -1,0 +1,20 @@
+jQuery(document).ready(function(){
+    jQuery(".quiz-start-link").addClass("btn btn-success");
+    jQuery(".node-quiz").addClass("col-md-4 col-lg-4 col-xs-12");
+    jQuery(".page-node-take .col-sm-12 , .page-node-quiz-results .col-sm-12").addClass("col-sm-12 col-sm-12 col-md-8 col-md-offset-2 test_take");
+   	jQuery(".nav-tabs li:contains('Request new password')").hide(); 
+   	jQuery(".not-logged-in .col-sm-12").eq(0).addClass("col-md-4 col-md-offset-4 loginPage");	
+  	jQuery(".page-user-edit .col-sm-12").addClass("col-md-6 col-md-offset-3 userEditPage");
+	jQuery(".page-user- .col-sm-12").addClass("col-md-6 col-md-offset-3 userPage");
+  	jQuery(".page-dashboard .col-sm-12").addClass("col-md-8 col-md-offset-2 dashboardPage");
+  	jQuery("thead").addClass("bg-primary");
+
+
+
+  	jQuery(".field-item img").addClass("img-responsive");	
+  
+  // 	var str = jQuery('p').html();
+		// str.replace('&nbsp;', '');
+		// jQuery('p').html(str);
+
+	});;

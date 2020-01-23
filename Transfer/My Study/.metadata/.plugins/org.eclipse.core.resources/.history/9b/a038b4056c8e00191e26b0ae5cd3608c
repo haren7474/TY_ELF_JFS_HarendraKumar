@@ -1,0 +1,19 @@
+package practice.constructors;
+
+public class Test 
+{
+	Test()
+	{
+		System.out.println("No agr");
+	}
+	
+	Test(int x, double y)
+	{
+		System.out.println("int/double agr");
+	}
+	
+	Test(String s)
+	{
+		System.out.println("String agr"+ x);
+	}
+}

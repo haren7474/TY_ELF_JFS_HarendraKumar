@@ -1,0 +1,22 @@
+package com.tyss.cucumberdemo.stepdefinition;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Step {
+	@Given("User navigate to login page")
+	public void user_navigate_to_login_page() {
+		
+	}
+	
+	@When("User enters username and password")
+	public void user_enters_username_and_password() {
+		
+	}
+	
+	@Then("Login should be successful")
+	public void login_should_be_successful() {
+		
+	}
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <title>Child Selector </title>
+	<style>
+
+	#externalDiv>p
+	{
+	color: green;
+	}
+
+	</style>
+	
+ </head>
+ <body>
+
+	<!--Child Selector--It will not affect indirect p tag-->
+	<div id="externalDiv">
+	<p> This is  paragraph present inside the div tag</p>
+	<p> This is  another paragraph present inside the div tag</p>
+		<div> <p> This is internal div tag </p></div>
+	</div>
+
+	<p>This is  paragraph present OUTSIDE the div tag, here that CSS chould not be applied.</p>
+
+ </body>
+</html>

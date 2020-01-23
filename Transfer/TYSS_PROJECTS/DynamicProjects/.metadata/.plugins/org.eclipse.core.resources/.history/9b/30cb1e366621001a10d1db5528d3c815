@@ -1,0 +1,9 @@
+package com.tyss.myfirstwebapp.servletforjsp;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/updateUser2")
+public class UpdateUserServlet extends HttpServlet{
+	
+}

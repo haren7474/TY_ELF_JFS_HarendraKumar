@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MainClass.java&apos; to &apos;HSCM29/src/hebbal.multithreading.join&apos;&#x0D;&#x0A;- Original project: &apos;HSCM29&apos;&#x0D;&#x0A;- Destination element: &apos;HSCM29/src/hebbal.multithreading.join&apos;&#x0D;&#x0A;- Original element: &apos;hebbal.multithreading.join.MainClass.java&apos;" description="Copy compilation unit" destination="/src&lt;hebbal.multithreading.join" element1="/src&lt;hebbal.multithreading.join{MainClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1566211195433" units="1" version="1.0"/>
+</session>

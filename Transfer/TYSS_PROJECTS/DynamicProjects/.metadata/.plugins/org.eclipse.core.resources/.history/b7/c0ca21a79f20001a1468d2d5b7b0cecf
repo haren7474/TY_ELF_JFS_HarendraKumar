@@ -1,0 +1,9 @@
+package com.tyss.myfirstwebapp.services;
+
+import com.tyss.myfirstwebapp.beans.UserBean;
+
+public interface UserServices {
+	public UserBean searchUser(int userId);
+	public UserBean authenticate(int usedId, String password);
+	public boolean addUser(UserBean user);
+}

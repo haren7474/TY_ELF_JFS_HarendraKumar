@@ -1,0 +1,10 @@
+package com.tyss.seleniumdemo;
+
+public class SeleniumDemo {
+	static {
+		System.setProperty("webdriver.chrome.drive, value)
+	}
+	public static void main(String[] args) {
+		
+	}
+}

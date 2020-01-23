@@ -1,0 +1,7 @@
+<div class="bg-dark text-white">Parent Component</div>
+
+<h1>{{dataFromChild}}</h1>
+
+<app-child [dataFromParent]='student' 
+    (childEvent)='getChildData($event)'>
+</app-child>

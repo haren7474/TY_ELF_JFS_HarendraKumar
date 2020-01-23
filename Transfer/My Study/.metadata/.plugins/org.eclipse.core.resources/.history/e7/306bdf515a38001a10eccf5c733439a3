@@ -1,0 +1,37 @@
+package com.tyss.executionflow;
+
+import org.testng.Reporter;
+import org.testng.annotations.BeforeSuite;
+
+public class BaseTest {
+	@BeforeSuite
+	public void m1() {
+		Reporter.log("@BeforeSuite executed" , true);
+	}
+	
+	@BeforeSuite
+	public void m2() {
+		Reporter.log("@BeforeSuite executed" , true);
+	}
+	@BeforeSuite
+	public void m3() {
+		Reporter.log("@BeforeSuite executed" , true);
+	}
+	@BeforeSuite
+	public void m4() {
+		Reporter.log("@BeforeSuite executed" , true);
+	}
+	@BeforeSuite
+	public void m5() {
+		Reporter.log("@BeforeSuite executed" , true);
+	}
+	@BeforeSuite
+	public void m6() {
+		Reporter.log("@BeforeSuite executed" , true);
+	}
+	@BeforeSuite
+	public void m7() {
+		Reporter.log("@BeforeSuite executed" , true);
+	}
+	
+}

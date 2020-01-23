@@ -1,0 +1,10 @@
+package com.tyss.executionflow;
+
+import org.testng.Reporter;
+
+public class TestMyBase extends BaseTest{
+	@TestMyBase
+	public void test1() {
+		Reporter.log(arg0);
+	}
+}

@@ -1,0 +1,127 @@
+package com.tyss.fms.controller;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.tyss.fms.dto.UserBean;
+import com.tyss.fms.factory.ForestryManagementSystemFactory;
+import com.tyss.fms.services.CustomerServices;
+
+public class UserIO {
+	static CustomerServices customerServices = ForestryManagementSystemFactory.instanceOfCustomerServices();
+	static List<UserBean> customerList = null;
+	static UserBean customer = null;
+	static Scanner sc = new Scanner(System.in);
+	static String[] args=null;
+	
+	public static void userHandler() 
+	{
+		while (true) 
+		{
+			switch (customerMenu()) 
+			{
+			case 1:
+				if (customerServices.addCustomer(readCustomerDetails(customer, sc))) {
+					System.out.println("New Customer has been added");
+				} else {
+					System.err.println("Duplicate Customer Id can not be added");
+				}
+				break;
+
+			case 2:
+				System.out.println("Please enter Customer");
+				String custId = sc.nextLine();
+				System.out.println("Please enter new Email Id to be updated");
+				String email = sc.nextLine();
+				if (customerServices.modifyCustomer(custId, email)) {
+					System.out.println("Customer with ID: " + custId + " has been updated with new email: " + email);
+				} else {
+					System.out.println("Customer with ID: " + custId + " is not present in database");
+				}
+				break;
+
+			case 3:
+				System.out.println("Please enter Customer Id to be deleted");
+				custId = sc.nextLine();
+				if (customerServices.deleteCustomer(custId)) {
+					System.out.println("Customer with ID: " + custId + " has been deleted");
+				} else {
+					System.out.println("Customer with ID: " + custId + " is not present in database");
+				}
+
+				break;
+
+			case 4:
+				customerList = customerServices.getAllCustomer();
+
+				if (customerList.size() > 0) {
+					for (UserBean cust : customerList) {
+						System.out.println(cust);
+					}
+				} else {
+					System.out.println("No Database for customers, please add new customer");
+				}
+				break;
+
+			case 5: // To be added
+				break;
+
+			case 6:
+				App.main(args);
+				break;
+
+			case 7:
+				System.exit(0);
+				break;
+
+			default:
+				System.out.println("Invalid Choice");
+			}
+		}
+	}
+
+	public static UserBean readCustomerDetails(UserBean customer, Scanner sc) {
+		customer = new UserBean();
+		System.out.println("A. Add Customer\nB. Add Haulier\nC. Add Admin\nPlease enter category");
+		char actChoice = sc.next().charAt(0);
+		String userType = null;
+		if (actChoice == 'A' || actChoice == 'a')
+			userType = "Cust";
+		else if (actChoice == 'B' || actChoice == 'b')
+			userType = "Haul";
+		else if (actChoice == 'C' || actChoice == 'c')
+			userType = "Admn";
+		System.out.println("Please enter Customer ID");
+		sc.nextLine();
+		customer.getUserId(userType + "_" + sc.nextLine());
+		System.out.println("Please enter Customer Name");
+		customer.setCustomerName(sc.nextLine());
+		System.out.println("Please enter Street Add1");
+		customer.setStreetAdd1(sc.nextLine());
+		System.out.println("Please enter Street Add2");
+		customer.setStreetAdd2(sc.nextLine());
+		System.out.println("Please enter Town");
+		customer.setTown(sc.nextLine());
+		System.out.println("Please enter Postal Code");
+		customer.setPostalCode(sc.nextInt());
+		sc.nextLine();
+		System.out.println("Please enter Email ");
+		customer.setEmail(sc.nextLine());
+		System.out.println("Please enter Mobile Number");
+		customer.setMobileNumber(sc.nextLine());
+		System.out.println("Please enter Password");
+		customer.setPassword(sc.nextLine());
+		return customer;
+	}
+	
+	public static int customerMenu() {
+		System.out.println("***********Customer Menu***********");
+		System.out.println("1. Add Customer\n2. Modify Custoomer \n3. Delete Customer"
+				+ "\n4. Display All Customers\n5. To be implementes\n6. Go to Dashboard\n7. Exit");
+		System.out.println("*********************************");
+		System.out.println("Please enter your choice from Customer Menu");
+		int customerChoice = sc.nextInt();
+		sc.nextLine();
+		return customerChoice;
+	}
+}

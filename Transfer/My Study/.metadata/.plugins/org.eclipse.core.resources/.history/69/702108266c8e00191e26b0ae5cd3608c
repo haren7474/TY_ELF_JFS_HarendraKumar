@@ -1,0 +1,6 @@
+package practice.constructors;
+
+public class MainClass 
+{
+	Test t = new Test();
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <title>Descendent Selector </title>
+	<style>
+
+	/*Descendent Selector*/
+	div p
+	{
+		color: red;
+	}
+
+
+
+	</style>
+	
+
+ </head>
+ <body>
+
+	<!--Descendent Selector-->
+	<div>
+	<p> This is  paragraph present inside the div tag</p>
+	<p> This is  another paragraph present inside the div tag</p>
+		<div> <p> This is internal div tag </p></div>
+	</div>
+
+	<p>This is  paragraph present OUTSIDE the div tag, here that CSS chould not be applied.</p>
+
+	
+
+ </body>
+</html>

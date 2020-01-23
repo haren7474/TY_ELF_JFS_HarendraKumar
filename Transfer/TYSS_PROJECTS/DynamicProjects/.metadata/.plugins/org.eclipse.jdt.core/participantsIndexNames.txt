@@ -1,0 +1,5 @@
+INDEX VERSION 1.130
+D:\TYSS_PROJECTS\DynamicProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1329832501.index
+\myfirstwebapp\src\main\resources
+D:\TYSS_PROJECTS\DynamicProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3641163324.index
+\myfirstwebappjsp\src\main\java

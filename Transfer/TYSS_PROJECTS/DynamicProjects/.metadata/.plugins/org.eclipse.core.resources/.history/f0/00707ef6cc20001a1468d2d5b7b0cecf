@@ -1,0 +1,10 @@
+package com.tyss.myfirstwebapp.servletforjsp;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/login2")
+public class loginServlet2 extends HttpServlet
+{
+	
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+
+  <title>General Sibling </title>
+	
+	<style>
+	#externalDiv~p
+	{
+	color: green;
+	}
+
+	</style>
+	
+ </head>
+ <body>
+
+	<!--Adjacent Selector--It will affect only Sibling selector-->
+	<div id="externalDiv">
+	<p> This is  paragraph p1</p>
+	<p> This is  another paragraph p2</p>
+		<div> <p> This is internal div tag </p></div>
+	<p> This is  another paragraph p3</p>
+	</div>
+
+	<p>This is  paragraph is Sibling Paragraph.</p>
+	<p>This is  paragraph is not a Sibling Paragraph, here changes should reflect.</p>
+
+ </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body bgcolor="#ccffff">
+  
+<table border="2" align="Center" height=500 width=600 bgcolor= "#ff6600">
+<caption> <h4> My Time Table </h4> </caption>
+
+<tr>
+	<th rowspan=3>Day</th>
+	<th colspan=3>Seminar</th>
+	
+</tr>
+
+
+<tr>
+
+	<th colspan=2>Schedule</th>
+	<th rowspan=2>Topic</th>
+</tr>
+
+
+<tr>
+	
+
+	<th>Begin</th>
+	<th>End</th>
+</tr>
+
+
+<tr>
+	<td rowspan=2>Monday</td>
+	<td rowspan=2>8:00 am</td>
+	<td rowspan=2>5:00 pm</td>
+	<td>Introduction to XML</td>
+</tr>
+
+
+<tr>
+	
+	<td>Validity: DTD and relax NG</td>
+</tr>
+
+
+<tr>
+	<td rowspan=4>Tuesday</td>
+	<td>8:00am</td>
+	<td>11:00 am</td>
+	<td rowspan=2>XPath <img src="C:/Users/Lenovo/Pictures/haren.jpg" width="50" height="50" border="0" alt=""></td>
+</tr>
+
+
+<tr>
+
+	<td rowspan=2>11:00 am</td>
+	<td rowspan=2>2:00 pm</td>
+	 
+</tr>
+
+<tr>
+	<td rowspan=2>XSL Transformations</td>
+</tr>
+
+<tr>
+
+	<td>2:00 pm</td>
+	<td>5:00 pm</td>
+	
+</tr>
+
+
+<tr>
+	<td>Wednesday</td>
+	<td>8: am</td>
+	<td>12:00 pm</td>
+	<td>XSL formatting objects 
+	<a href="google.com"> Google</a>
+	<a href="google.com"> Google</a>
+	</td>
+</tr>
+
+</table>
+
+ </body>
+</html>

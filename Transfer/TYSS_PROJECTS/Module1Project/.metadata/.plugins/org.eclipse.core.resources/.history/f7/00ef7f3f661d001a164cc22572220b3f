@@ -1,0 +1,6 @@
+package com.tyss.phonesimulator.dao;
+
+public interface ContactDao 
+{
+	
+}

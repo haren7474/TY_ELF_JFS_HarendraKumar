@@ -1,0 +1,20 @@
+
+Java Written
+------------
+
+1.  What is OOP ? explain in brief.
+2.  Write a program to Show exception propogation for custom exception class.
+3.  Write own immutable class.
+4.  Write a program to sort a group of student objects based on name.
+5.  explain generalization with the help of an example.
+6.  write a program of abstraction.
+7.  explain abstraction with the help of an example.
+8.  explain the concept of polymorphism with the help of an example.
+9.  Show overloading and overriding in the same program.
+10. Explain type casting using an example.
+
+Note:
+-----
+
+Please guys and girls don't write VTU type answers. I bloody don't have patience
+to read it. Explain me the program that will be more than enough.

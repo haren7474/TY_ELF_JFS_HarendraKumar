@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58592" started-at="2020-01-16T12:35:16Z" finished-at="2020-01-16T12:36:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="58592" started-at="2020-01-16T12:35:16Z" finished-at="2020-01-16T12:36:15Z">
+      <class name="com.tyss.validations.Assertion">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.tyss.validations.Assertion@4501b7af]" name="test1" duration-ms="28875" started-at="2020-01-16T12:35:16Z" finished-at="2020-01-16T12:35:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.tyss.validations.Assertion@4501b7af]" name="test2" duration-ms="29612" started-at="2020-01-16T12:35:45Z" finished-at="2020-01-16T12:36:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.tyss.validations.Assertion -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

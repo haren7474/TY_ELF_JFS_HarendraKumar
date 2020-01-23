@@ -1,0 +1,32 @@
+package com.tyss.empspringmvc.dao;
+
+import com.tyss.empspringmvc.beans.EmployeeBean;
+
+public class EmployeeDaoImpl implements EmployeeDAO
+{
+
+	@Override
+	public EmployeeBean auth(String email, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean register(EmployeeBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public EmployeeBean getEmployee(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean changePassword(int id, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.tyss.phonesimulator.dto;
+
+public class Contact {
+
+}

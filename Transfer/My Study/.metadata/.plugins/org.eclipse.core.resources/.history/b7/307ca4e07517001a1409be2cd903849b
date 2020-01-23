@@ -1,0 +1,49 @@
+package com.tyss.fms.controller;
+
+import java.util.Scanner;
+
+public class App {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) 
+	{
+		while (true) 
+		{
+			switch (dashBoardMenu()) 
+			{
+			case 1:
+				UserIO.userHandler();
+				break;
+
+			case 2:
+				ContractIO.contractHandler();
+				break;
+
+			case 3:
+				ProductIO.productHandler();
+				break;
+
+			case 4:
+				LandIO.landHandler();
+				break;
+
+			case 5:
+				System.exit(0);
+				break;
+
+			default:
+				System.out.println("Invalid Choice");
+			}
+		}
+	}
+
+	public static int dashBoardMenu() {
+		System.out.println("***********DashBoard Menu***********");
+		System.out.println("1. Manage Customer\n2. Manage Contract\n3. Manage Product\n4. Manage Land Data\n5. Exit");
+		System.out.println("***********************************");
+		System.out.println("Please enter your choice from DashBaord menu");
+		int dashBoardChoice = sc.nextInt();
+		sc.nextLine();
+		return dashBoardChoice;
+	}
+}

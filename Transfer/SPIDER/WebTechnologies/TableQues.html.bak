@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>TableQuestion</title>
+ </head>
+ <body>
+  
+<table border="2" align="Center" height=300 width=300 bgcolor= #99ff33>
+<caption> <h4> Test Table with Merged Cells </h4> </caption>
+
+<tr>
+	<td rowspan=2>1</td>
+	<td colspan=2>Average</td>
+	<td rowspan=2>Red Eyes</td>
+</tr>
+
+<tr>
+	<td>height</td>
+	<td>weight</td>
+
+</tr>
+
+<tr>
+	<td>Male</td>
+	<td>1.9</td>
+	<td>0.003</td>
+	<td>40%</td>
+</tr>
+
+<tr>
+	<td>Female</td>
+	<td>1.7</td>
+	<td>0.002</td>
+	<td>43%</td>
+</tr>
+
+</table>
+
+ </body>
+</html>

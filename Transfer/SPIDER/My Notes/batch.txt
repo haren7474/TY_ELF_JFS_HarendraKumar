@@ -1,0 +1,35 @@
+//Setting Auto commit as false.
+			con.setAutoCommit(false);
+
+			String query1="update politicians set marks =? where id=? ";
+			String query2="update politicians set marks =? where id=? ";
+			pstmt1= con.prepareStatement(query1);
+			pstmt2= con.prepareStatement(query2);
+			
+			pstmt1.setDouble(1, marks1);
+			pstmt1.setInt(2, id1);
+			pstmt1.addBatch();
+			
+			pstmt2.setDouble(1, marks2);
+			pstmt2.setInt(2, id2);
+			pstmt2.addBatch();
+			
+			int [] count1= pstmt1.executeBatch();
+			
+			int [] count2= pstmt2.executeBatch();
+			
+			for (int i : count1) 
+			{
+				System.out.println("Query OK, " + i + "Number of rows affected");
+			}
+			
+
+			for (int i : count2) 
+			{
+				System.out.println("Query OK, " + i + "Number of rows affected");
+			}
+			
+			System.out.println("JDBC Transaction is successfull");
+			//Setting it to commit
+			con.commit();
+

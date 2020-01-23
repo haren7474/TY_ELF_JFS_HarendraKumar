@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  
+  <title>Company Registration</title>
+ </head>
+ <body bgcolor='#99ffcc'>
+<table align='center'>
+
+ <form method="get" action="">
+
+<tr>
+	<td><sup>*</sup>Company </td>
+	<td><input type='text' name='cname' required> <br> </td>
+</tr>
+
+
+<tr>
+	<td><sup>*</sup>First Name</td>
+	<td><input type='text' name='fname' required> </td>
+</tr>
+
+
+<tr>
+	<td><sup>*</sup>Last Name</td>
+	<td><input type='text' name='lname' required> <br></td>
+</tr>
+
+
+<tr>
+	<td><sup>*</sup>Email</td>
+	<td><input type='email' name='email' required><br>
+</td>
+</tr>
+
+
+<tr>
+	<td><sup>*</sup>Title</td>
+	<td><input type='text' name='title' required><br></td>
+</tr>
+
+
+<tr>
+	<td><sup>*</sup>Phone</td>
+	<td><input type='number' name='phone' required> <br></td>
+</tr>
+
+<tr>
+	<td>Cancel Registration</td>
+	<td><input type='checkbox' name ='a' value='cancel' > <br></td>
+</tr>
+
+<tr>
+	<td>252 Training Session 2010</td>
+	<td>
+	<select required name="date">
+		<option> Select a Date</option>
+		<option> 2010-1-1 </option>
+		<option> 2010-2-2 </option>
+		<option> 2010-3-3 </option>
+		<option> 2010-4-4 </option>
+	</select>
+
+	</td>
+</tr>
+
+<tr>
+	<td>Job Funtion</td>
+	<td>
+		<input type='radio' name ='gen' value='CM' required> <label> Campaign Management</label><br>
+		<input type='radio' name ='gen' value='CRMA'> <label> CRM Administration</label><br>
+		<input type='radio' name ='gen' value='ED'> <label> Email Deployment</label><br>
+		<input type='radio' name ='gen' value='P'> <label> Partner</label><br>
+		<input type='radio' name ='gen' value='E'> <label> Employee</label><br>
+	</td>
+</tr>
+
+<tr>
+	<td><label> Distray Requirement </Label></td>
+	<td><input type='text' name='drequirement'> <br></td>
+</tr>
+
+<tr>
+	<td><label> Explanations </Label></td>
+	<td><textarea cols=40 rows 10> </textarea> <br></td>
+
+</tr>
+
+<tr>
+	<td><input type='submit' value="Submit"></td>
+	<td><input type='reset' value="Reset"></td>
+</tr>
+
+</table>
+	
+
+</body>
+</html>

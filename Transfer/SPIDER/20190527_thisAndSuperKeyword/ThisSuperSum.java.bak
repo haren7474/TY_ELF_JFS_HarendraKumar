@@ -1,0 +1,41 @@
+class ThisSuperSum 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+		Test t= new Test(10,10.11);
+		t.display();
+	}
+}
+
+class Test extends Parent
+{
+	int x;
+	double y;
+
+	Test(int x, double y)
+	{
+		this.x= x;
+		this.y=y;
+	}
+
+	public void display()
+	{
+		int x=20;
+		double y=30.11;
+
+		System.out.println("x+ this x "+ (this.x + x));
+		System.out.println("y+ this x "+ (this.y + y));
+	}
+}
+
+
+class Parent
+{
+	int x= 1;
+	double y=2.11;
+	public static void Print()
+	{
+		System.out.println("Print Method from Parent class");
+	}
+}

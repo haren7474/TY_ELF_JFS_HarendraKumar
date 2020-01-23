@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\TYSS_PROJECTS\DynamicProjects\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2464951751.index
+3468313076.index
+2875042166.index
+3151998185.index
+871654651.index
+85101104.index

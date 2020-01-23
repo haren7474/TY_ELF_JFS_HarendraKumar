@@ -1,0 +1,7 @@
+package com.tyss.phonesimulator.controller;
+
+public class Validation {
+	public static boolean Name(String firstName) {
+		return firstName.matches("[A-Z][a-z]*");
+	}
+}

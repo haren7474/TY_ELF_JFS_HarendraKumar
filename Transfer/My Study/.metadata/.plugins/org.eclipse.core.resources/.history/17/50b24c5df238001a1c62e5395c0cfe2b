@@ -1,0 +1,10 @@
+package com.tyss.cucumberdemo.stepdefinition;
+
+import cucumber.api.java.en.Given;
+
+public class Step {
+	@Given("User navigate to login page")
+	public void user_navigate_to_login_page() {
+		
+	}
+}

@@ -1,0 +1,5 @@
+package com.tyss.myfirstwebapp.servlets;
+
+public class GetAllUsersServlet {
+
+}

@@ -1,0 +1,49 @@
+package com.tyss.phonesimulator.controller;
+
+import java.util.Scanner;
+
+import com.tyss.phonesimulator.dto.Contact;
+
+public class ContactIO {
+	static Scanner sc = new Scanner(System.in);
+	static Contact contact = null;
+
+	public static int dashbaord() {
+		System.out.println("\n************************");
+		System.out.println("1. Show all contacts\n2. Search for Contact (Using Name)\n3. Operate on Contact\n4. Exit");
+		System.out.println("\n************************\n");
+		System.out.println("Please enter your choice: ");
+		return sc.nextInt();
+	}
+
+	public static int contactMenu() {
+		System.out.println("1. Call Person\n2. Send Message to Person\n3. Go to MainMenu\n4. Exit");
+		System.out.println("Please enter your choice: ");
+		return sc.nextInt();
+	}
+
+	public static int crudMenu() {
+		System.out.println("1. Add Contact\n2. Delete Contact\n3. Edit Contact\n4. Go to MainMenu\n5. Exit");
+		System.out.println("Please enter your choice: ");
+		return sc.nextInt();
+	}
+
+	public static Contact readContact() {
+		contact = new Contact();
+		System.out.println("Please enter Contact Name: ");
+		contact.setContactName(sc.next());
+
+		System.out.println("Please enter Number: ");
+		contact.setContactNumber(sc.next());
+
+		System.out.println("Please enter Group name: ");
+		contact.setContactGroup(sc.next());
+
+		return contact;
+	}
+
+	public static String deleteContact() {
+		System.out.println("Please enter Contact Name to be deleted: ");
+		return sc.next();
+	}
+}

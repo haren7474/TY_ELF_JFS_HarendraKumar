@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Object</title>
+ </head>
+ <body>
+
+<pre>
+<script>
+
+		//Creating object useing Diect Literals.
+		var pen= { color: "black",
+				   price: 10,
+				   brand: "camlin"
+					};
+
+		   //Accessing properties using . operator
+		   document.writeln("<h6>--Accessing properties using . operator---<br></h6>");
+		   document.writeln("<b>Color </b>"+ pen.color + "<br>");
+		   document.writeln("<b>Price </b>"+ pen.price+ "<br>");
+		   document.writeln("<b>Brand </b>"+pen.brand+ "<br>");
+
+		   //Changing and Accessing properties using . operator
+		   document.writeln("<br>");
+		   pen.brand= "Cello";  
+		   document.writeln("<h6>--Changing and Accessing properties using . operator---<br></h6>");
+		   document.writeln("<b>Color </b>"+ pen.color + "<br>");
+		   document.writeln("<b>Price </b>"+ pen.price+ "<br>");
+		   document.writeln("<b>Brand </b>"+pen.brand+ "<br>");
+	
+
+			//Changing and Accessing properties using subscript operator
+		   document.writeln("<br>");
+		   pen["brand"]= "Reynolds";
+		   document.writeln("<h6>--Accessing properties using subscript operator---<br></h6>");
+		   document.writeln("<b>Color </b>"+ pen["color"] + "<br>");
+		   document.writeln("<b>Price </b>"+ pen["price"]+ "<br>");
+		   document.writeln("<b>Brand </b>"+pen["brand"]+ "<br>");
+
+
+
+			//Creating object useing New Keyword.
+			var pen= new Object(); //An empty Pen object is created here.
+
+			//Here we can set attributes using either. or subscript operator.
+			pen.color="Red";
+			pen["price"]=10;
+			pen.brand="Sakata";
+
+		   //Accessing properties using . operator or subscript
+		   document.writeln("<h6>--Accessing properties using . operator---<br></h6>");
+		   document.writeln("<b>Color </b>"+ pen.color + "<br>");
+		   document.writeln("<b>Price </b>"+ pen.price+ "<br>");
+		   document.writeln("<b>Brand </b>"+pen.brand+ "<br>");
+
+			
+			
+			//Creating object useing Function.
+			function penn(color, price, brand)
+			{
+				this.color=color;
+				this.price=price;
+				this.brand=brand;
+			}
+
+			
+			//Initializing penn Object
+			var pen1= new penn("green", 20, "Gello");
+			var pen2= new penn("Yellow", 35, "Hello");
+
+			//Accessing properties using . operator or subscript
+		   document.writeln("<h6>--For Function...Accessing properties using . operator---<br></h6>");		
+		   document.writeln("<b>Color </b>"+ pen1.color + "<br>");
+		   document.writeln("<b>Price </b>"+ pen1.price+ "<br>");
+		   document.writeln("<b>Brand </b>"+pen1.brand+ "<br>");
+
+		   document.writeln("<b>Color </b>"+ pen2.color + "<br>");
+		   document.writeln("<b>Price </b>"+ pen2.price+ "<br>");
+		   document.writeln("<b>Brand </b>"+pen2.brand+ "<br>");
+
+			
+
+			//Writing a function inside a object
+
+			var pen= { color: "black",
+					   price: 10,
+				       brand: "camlin",
+
+					   write: function()
+							{
+							document.writeln("This is a method inside Pen Object");
+							},
+
+					   getDetails: function()
+							{
+								document.writeln("<b>Color=</b>"+ pen.color);
+								document.writeln("<b>Price=</b>"+ pen.price);
+								document.writeln("<b>Brand=</b>"+ pen.brand);
+							}
+					};
+
+		   document.writeln("<b>Color </b>"+ pen.color);
+		   document.writeln("<b>Price </b>"+ pen.price);
+		   document.writeln("<b>Brand </b>"+pen.brand);
+
+		   document.writeln("This is a write invocation");
+		   pen.write();
+
+		   document.writeln("<br>This is a getDetails invocation");
+		   pen.getDetails();
+	
+  </script>
+</pre>
+
+ </body>
+</html>

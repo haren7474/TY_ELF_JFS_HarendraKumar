@@ -1,0 +1,27 @@
+package com.tyss.phonesimulator.controller;
+
+import java.util.Scanner;
+
+public class ContactIO {
+	static Scanner sc = new Scanner(System.in);
+
+	public static int dashbaord() {
+		System.out.println("1. Show all contacts\n2. Search for Contact (Using Name)\n3. Operate on Contact\n4. Exit");
+		System.out.println("Please enter your choice: ");
+		return sc.nextInt();
+	}
+	
+	public static int contactMenu()
+	{
+		System.out.println("1. Call Person\n2. Send Message to Person\n3. Go to MainMenu\n4. Exit");
+		System.out.println("Please enter your choice: ");
+		return sc.nextInt();
+	}
+	
+	public static int crudMenu()
+	{
+		System.out.println("1. Call Person\n2. Send Message to Person\n3. Go to MainMenu\n4. Exit");
+		System.out.println("Please enter your choice: ");
+		return sc.nextInt();
+	}
+}

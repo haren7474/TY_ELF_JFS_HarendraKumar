@@ -1,0 +1,34 @@
+package edu.jpiders.javatest;
+
+import java.util.Scanner;
+
+public class MoviesAppCompile 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("1.Horror\n2.Comedy\n3.Thriller\n\nPlease enter your choice");
+		
+		int choice= sc.nextInt();
+		MoviesFac_CompileTime mf= new MoviesFac_CompileTime();
+		
+		
+		switch(choice)
+		{
+		case 1: mf.getMovie(new Horror());			
+				break;
+				
+		case 2: mf.getMovie(new Comedy());
+				break;
+		
+		case 3: mf.getMovie(new Thriller());
+				break;
+		
+		case  4: System.exit(0);
+			break;
+				
+		
+		}
+
+	}
+}

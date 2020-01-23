@@ -1,0 +1,9 @@
+<div class="col-md-3 float-left">
+    <div class="card card-body" *ngFor='let byke of bykes'>
+        <img src="{{byke.imgUrl}}" alt="" height="200px" 
+        (click)='selectByke(byke)'>
+        <div class="text-center">{{byke.name}} </div>
+    </div>
+</div>
+
+<app-bike-details [bykeDetails]='selectedByke'></app-bike-details>

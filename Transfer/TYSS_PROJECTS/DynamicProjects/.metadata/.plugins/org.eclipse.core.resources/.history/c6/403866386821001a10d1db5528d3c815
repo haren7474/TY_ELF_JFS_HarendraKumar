@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>myfirstwebapp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>myContextParam</param-name>
+		<param-value>14434</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>userServlet</servlet-name>
+		<servlet-class>com.tyss.myfirstwebapp.servlets.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userServlet</servlet-name>
+		<url-pattern>/userServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>currentDate</servlet-name>
+		<servlet-class>com.tyss.myfirstwebapp.servlets.DateServlet</servlet-class>
+		<init-param>
+			<param-name>myConfigParam</param-name>
+			<param-value>Hello</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>currentDate</servlet-name>
+		<url-pattern>/currentDate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>contextParamServlet</servlet-name>
+		<servlet-class>com.tyss.myfirstwebapp.servlets.ContextParamServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>contextParamServlet</servlet-name>
+		<url-pattern>/contextParamServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>loginJsp</servlet-name>
+		<jsp-file>/loginJsp.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginJsp</servlet-name>
+		<url-pattern>/loginJsp</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>seachUserJsp</servlet-name>
+		<jsp-file>/SearchUserJsp.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>seachUserJsp</servlet-name>
+		<url-pattern>/seachUserJsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteJsp</servlet-name>
+		<jsp-file>/deleteUserJsp.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteJsp</servlet-name>
+		<url-pattern>/deleteJsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddUserJsp</servlet-name>
+		<jsp-file>/AddUserJsp.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUserJsp</servlet-name>
+		<url-pattern>/AddUserJsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Homepage</servlet-name>
+		<jsp-file>/HomepageJsp.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Homepage</servlet-name>
+		<url-pattern>/Homepage</url-pattern>
+	</servlet-mapping>
+
+</web-app>

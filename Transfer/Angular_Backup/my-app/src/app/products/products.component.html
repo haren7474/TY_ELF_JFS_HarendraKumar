@@ -1,0 +1,56 @@
+
+<div class="alert alert-danger" *ngIf='message'>{{message}}
+</div>
+<div class="container mt-3">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let product of products; index as i' 
+            
+            [ngClass]='{
+                "list-group-item-success" : product.name.charAt(0) === "A", 
+                "list-group-item-danger" : product.name.charAt(0)!=="A" 
+            }' [ngStyle]='{
+                "fontSize" : product.price> 10000 ? "20px" : "18px" 
+            }'>
+                <td>{{i+1}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.image}}</td>
+                <td>{{product.price}}</td>
+                <td><button class="btn btn-outline-primary" (click)='deleteProduct(product)'>Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf='flag; then trueBlock else falseBlock'></div>
+<ng-template #trueBlock>
+    <h1 class="bg-success text-center">
+        THIS IS TRUE BLOCK
+    </h1>
+</ng-template>
+
+<ng-template #falseBlock>
+    <h1 class="bg-danger text-center">
+        THIS IS FALSE BLOCK
+    </h1>
+</ng-template>
+
+<div [ngSwitch]='person'>
+    <div *ngSwitchCase="'Pawan'"> Pawan is selected</div>
+    <div *ngSwitchCase='"Harendra" '> Harendra is selected</div>
+    <div *ngSwitchCase='"Jatin" '> Jatin is selected</div>
+    <div *ngSwitchCaseDefault> Default is rendered</div>
+</div>
+
+<div appColor *ngIf='flag'>
+    Flag is true
+</div>

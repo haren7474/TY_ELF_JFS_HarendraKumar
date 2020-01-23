@@ -1,0 +1,5 @@
+package com.tyss.myfirstwebapp.servletforjsp;
+
+public class UpdateUserServlet {
+
+}
